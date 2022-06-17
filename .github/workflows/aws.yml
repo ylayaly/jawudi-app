@@ -24,10 +24,15 @@ jobs:
       run: npm install -g serverless@3.19.0
     - name: Install dependencies
       run: npm install
-    - name: serverless deploy
-      uses: serverless/github-action@v3.1
-      with:
-        args: deploy
+    - run: npm install -g @serverless/cli
+    - run: npm run deploy
+    - name: AWS Credentials
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: us-east-1
+      run: |
+        aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+        aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+        aws configure set region $AWS_REGION
+    - run: components-v1
