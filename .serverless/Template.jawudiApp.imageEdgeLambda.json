@@ -1,6 +1,6 @@
 {
   "name": "cwm91tf-9lthrm",
-  "hash": "qdmjmQRaBSgw78nTOQVX/frw+d7BGczt2ZGw0Pr/sxM=",
+  "hash": "9fhfzYV94GIENHEkrI/pNGLRAjZL05iaih+0n8hungE=",
   "description": "Image Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,

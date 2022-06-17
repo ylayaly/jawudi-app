@@ -1,6 +1,6 @@
 {
   "name": "cwm91tf-ocovki",
-  "hash": "rtI5G4myRT0hIVgz42vBLSfQrWOthHLGOROAH2LvTw0=",
+  "hash": "iI3h8WQW7pX+r5eJWGGMqR97Oc2gqaG+ulofaa21pe0=",
   "description": "Default Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,

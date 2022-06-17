@@ -2,8 +2,8 @@
   "name": "cwm91tf-ii1g7qj",
   "arn": "arn:aws:iam::398052081528:role/cwm91tf-ii1g7qj",
   "service": [
-    "lambda.amazonaws.com",
-    "edgelambda.amazonaws.com"
+    "edgelambda.amazonaws.com",
+    "lambda.amazonaws.com"
   ],
   "policy": {
     "Version": "2012-10-17",

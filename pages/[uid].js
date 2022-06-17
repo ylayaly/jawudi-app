@@ -10,11 +10,14 @@ export default function Homepage({ page }) {
   const { title } = page.data
 
   return <div className='container flex flex-col mx-auto justify-center items-center p-24'>
-    <h1 className='text-xl font-bold text-blue-600'>{title[0].text}</h1>
-    <br/>
-    <Link href="/" >
-            <a className='mt-10'>Go to Index</a>
-    </Link>
+    <div className='text-center'>
+      <h1 className='text-4xl font-bold text-blue-600'>{title[0].text}</h1>
+      <p className='text-base text-gray-400 mt-4'>Welcome to {title[0].text}</p>
+      <br/>
+      <Link href="/" >
+              <a className='mt-10 underline cursor-pointer'>Go to Index</a>
+      </Link>
+    </div>
   </div>
 }
 
