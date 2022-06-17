@@ -31,9 +31,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-# Serverless directories
-/.serverless/
-/.serverless_nextjs/
-
 # Slicemachine
 /.slicemachine/
+/.slicemachine
