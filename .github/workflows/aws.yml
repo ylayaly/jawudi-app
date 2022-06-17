@@ -34,3 +34,4 @@ jobs:
         aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY --profile jawudi
         aws configure set region $AWS_REGION --profile jawudi
     - run: npm run deploy
+    - run: components-v1
