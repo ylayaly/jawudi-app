@@ -1,0 +1,23 @@
+{
+  "id": "2e082056-9660-4e7e-85de-fd46cea2427b",
+  "uid": "amet-ducimus-et",
+  "type": "page",
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Consequat et proident voluptate ipsum do consequat fugiat sit mollit aliquip ad do do.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+    }
+  }
+}

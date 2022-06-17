@@ -1,0 +1,17 @@
+{
+  "name": "cwm91tf-9lthrm",
+  "hash": "qdmjmQRaBSgw78nTOQVX/frw+d7BGczt2ZGw0Pr/sxM=",
+  "description": "Image Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/Users/ylayaly/Desktop/Projects/jawudi/local-app/jawudi-app/.serverless_nextjs/image-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs14.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::398052081528:role/cwm91tf-ig4pkpq"
+  },
+  "arn": "arn:aws:lambda:us-east-1:398052081528:function:cwm91tf-9lthrm",
+  "region": "us-east-1"
+}
