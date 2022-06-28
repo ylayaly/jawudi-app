@@ -21,17 +21,13 @@ const HeroVideo = ({ slice }) => {
   var srcVideo = Video && Video.embed_url ? Video.embed_url : ''
   srcVideo = srcVideo != "" && srcVideo.includes("www.youtube.com/watch") ? srcVideo.replace("watch?v=", "embed/") : srcVideo
 
-  useEffect(() => {
-    return () => {}
-  }, [])
-
   return <section className='hero-video bg-jw-turquoise-1'>
     <div className=' w-full relative h-auto px-9 md:px-12 lg:px-20 xl:px-24 3xl:px-46 pt-28 xs:pt-40 sm:pt-64 md:pt-20 xl:pt-32'>
       <div className='hero-video__background absolute inset-0 bottom-auto md:bottom-0 h-full ' ></div>
       <div className='md:grid grid-cols-5 h-full gap-4 lg:gap-8 3xl:container mx-auto'>
         <div className='col-span-3'>
           <div className='relative flex flex-col justify-end h-full items-start'>
-              <div className='hero-video__richtext richtext text-white w-full mt-18 md:mt-0 text-center md:text-left xs:w-3/4 md:w-full mx-auto'>
+              <div className='hero-video__richtext richtext text-white w-full mt-14 xs:mt-18 md:mt-0 text-center md:text-left xs:w-3/4 md:w-full mx-auto'>
                 {title &&
                   <PrismicRichText field={title}/>
                 }
@@ -78,7 +74,7 @@ const HeroVideo = ({ slice }) => {
     {srcVideo !== "" && 
       <div className={'fixed inset-0 z-30 transition-opacity flex justify-center items-center ' + (showVideo ? 'opacity-100' : 'opacity-0 hidden')}>
           <div onClick={() => setShowVideo(false)} className='absolute inset-0 bg-black opacity-80 w-full h-full'></div>
-          <div className='relative w-full max-w-4xl border-black border-4'>
+          <div className='relative w-full max-w-4xl bg-black p-4'>
             <iframe className='w-full aspect-video aspect-h-9' src={srcVideo} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
       </div>}

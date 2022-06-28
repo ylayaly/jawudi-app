@@ -1,4 +1,3 @@
-// import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
 import Link from 'next/link'
 import { PrismicProvider } from '@prismicio/react'

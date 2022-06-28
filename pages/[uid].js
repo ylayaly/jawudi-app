@@ -4,6 +4,7 @@ import { SliceZone } from '@prismicio/react'
 import { components } from '../slices'
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
 
 export default function Homepage({ page, navigationHeader, navigationFooter, settings }) {
   if(!page || (page && !page.data) ){
@@ -16,8 +17,15 @@ export default function Homepage({ page, navigationHeader, navigationFooter, set
     return slice
   })
 
+  const seoData = {
+    title : prismicH.asText(page.data.title),
+    description : page.data.description,
+    image : page.data.image.url
+  }
+
   return ( 
   <>
+    <Seo data={seoData} />
     <Header navigation={navigationHeader} settings={settings} />
     <div>
       <SliceZone slices={page.data.slices} components={components} navHeader={navigationHeader} />
@@ -38,11 +46,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
-
   const page = await client.getByUID('page', params.uid)
   const navigationHeader = await client.getSingle('HeaderNavigation')
   const navigationFooter = await client.getAllByType('FooterNavigation')
-  console.log(navigationFooter)
   const settings = await client.getSingle('Settings')
 
   return {

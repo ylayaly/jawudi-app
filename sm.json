@@ -1,6 +1,6 @@
 {
   "_latest": "0.3.8",
-  "apiEndpoint": "https://jawudi-app.prismic.io/api/v2",
+  "apiEndpoint": "https://jawudi.prismic.io/api/v2",
   "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
   "libraries": [
     "@/slices"

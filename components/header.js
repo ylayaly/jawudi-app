@@ -31,7 +31,7 @@ export default function Header({navigation, settings}) {
     }, [])
 
     return (
-        <header className={'top-0 right-0 left-0 h-auto z-20 px-9 md:px-12 lg:px-20 xl:px-24 3xl:px-46 ' + (navClass ? "fixed bg-jw-turquoise-1 py-6 md:py-10 " : "absolute bg-transparent pt-20 md:pt-20 xl:pt-32")}>
+        <header className={'top-0 right-0 left-0 h-auto z-20 px-9 md:px-12 lg:px-20 xl:px-24 3xl:px-46 ' + (navClass ? "fixed bg-jw-turquoise-1 py-6 md:py-10 " : "absolute bg-transparent pt-16 xs:pt-20 xl:pt-32")}>
             <div className='3xl:container mx-auto flex justify-between'>
                 <div className='w-28 md:w-48'><Link href={"/"}><a><LogoDark /></a></Link></div>
                 <div className='logo-blue flex md:hidden'>
@@ -42,7 +42,7 @@ export default function Header({navigation, settings}) {
                 <div id="nav-links" className={'relative h-auto '}>
                     <div className='bg-header-mobile absolute w-full h-full'></div>
                     <div className='absolute right-0 top-0 pt-24 px-9 md:px-12 z-10'>
-                        <button type="button" onClick={() => {closeMenu()}}><Icon icon="close"/></button>
+                        <button className='w-5 h-5' type="button" onClick={() => {closeMenu()}}><Icon icon="close"/></button>
                     </div>
                     <div className='pt-24 px-9 md:px-12 relative text-jw-green-4 font-lato tracking-xl font-medium uppercase flex flex-col gap-8 '>
                         {links.map((link, i) => {

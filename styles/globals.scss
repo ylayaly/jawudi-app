@@ -2,6 +2,11 @@
 @import 'components/heroVideo.scss';
 @import 'components/headerNavigation.scss';
 
+@media (max-width: 359px) {
+    html{
+        font-size: 12px;
+    }
+}
 header {
     transition: background .4s ease;
 
@@ -85,6 +90,11 @@ header {
         background-position: 35% 120%;
         background-size: 141%;
     }
+
+    @media (max-width: 500px){
+        background-position: 35% 110%;
+        background-size: 70rem;    
+    }
 }
 
 .footer {
@@ -95,14 +105,7 @@ header {
 
     
     @media (max-width: 420px){
-        &__store{
-            flex-direction: column;
-            align-items: center;
-        }
-
         &__policies{
-            flex-direction: column;
-            align-items: center;
             row-gap: 1rem;
 
             div:first-child{
@@ -132,11 +135,11 @@ header {
         @apply relative;
 
     }
-    @media (min-width: 768px) and (max-width: 1279px){
+    @media (min-width: 768px) and (max-width: 1024px){
         &:after{
-            @apply absolute w-full h-4 py-6 bg-jw-green-5;
+            @apply absolute w-full h-4 py-4 bg-jw-green-5;
             content: '';
-            bottom: -2.9rem;
+            bottom: -1.9rem;
 
         }
     }

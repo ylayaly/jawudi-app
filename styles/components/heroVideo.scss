@@ -6,6 +6,10 @@
         background-repeat: no-repeat;
         background-size: 170%;
         
+        @media (max-width: 359px) {
+            background-size: 100%;
+        }
+
         @media (min-width: 360px) {
             background-position: 50% 0rem;
             background-size: 115%;
@@ -131,5 +135,9 @@
         background-position: top;
         background-repeat: no-repeat;
         background-size: 100%;
+
+        @media (max-width: 359px) {
+            background-size: cover;
+        }
     }
 }

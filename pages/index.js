@@ -1,6 +1,5 @@
 import { createClient } from '../prismicio'
 import { SliceZone } from '@prismicio/react'
-import * as prismic from '@prismicio/client';
 import * as prismicH from '@prismicio/helpers';
 import { components } from '../slices'
 import Header from '../components/header';
