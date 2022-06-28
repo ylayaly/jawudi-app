@@ -1,13 +1,13 @@
 {
-  "id": "fc8f2c8c-a791-4f3c-a7c6-d986ed012e02",
-  "uid": "unde-maiores-amet",
+  "id": "f4004cb8-e8a6-4b40-88fb-fae195d4a648",
+  "uid": "sint-dolorem-dolore",
   "type": "page",
   "data": {
     "logoColor": "Dark",
     "title": [
       {
         "type": "paragraph",
-        "text": "Magna cupidatat velit culpa excepteur. Esse Lorem magna mollit veniam minim commodo ea adipisicing non enim deserunt. Veniam aliqua dolor proident eu proident dolore enim magna elit mollit Lorem minim veniam sunt est.",
+        "text": "Est aute dolor adipisicing labore non magna esse ea.",
         "spans": []
       }
     ],
@@ -18,7 +18,8 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
-    }
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+    },
+    "description": "revolutionize magnetic e-tailers"
   }
 }

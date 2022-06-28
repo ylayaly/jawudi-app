@@ -1,9 +1,12 @@
-import { createClient, linkResolver } from '../prismicio'
-import * as prismicH from '@prismicio/helpers';
+import { createClient } from '../prismicio'
 import { SliceZone } from '@prismicio/react'
+import * as prismic from '@prismicio/client';
+import * as prismicH from '@prismicio/helpers';
 import { components } from '../slices'
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
+
 
 export default function Homepage({ page, navigationHeader, navigationFooter, settings }) {
   if(!page || (page && !page.data) ){
@@ -16,8 +19,15 @@ export default function Homepage({ page, navigationHeader, navigationFooter, set
     return slice
   })
 
+  const seoData = {
+    title : prismicH.asText(page.data.title),
+    description : page.data.description,
+    image : page.data.image.url
+  }
+
   return ( 
   <>
+    <Seo data={seoData} />
     <Header navigation={navigationHeader} settings={settings} />
     <div>
       <SliceZone slices={page.data.slices} components={components} navHeader={navigationHeader} />
