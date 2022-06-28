@@ -33,7 +33,6 @@ export async function getStaticProps({ params, previewData }) {
   const page = await client.getByUID('page', 'home')
   const navigationHeader = await client.getSingle('HeaderNavigation')
   const navigationFooter = await client.getAllByType('FooterNavigation')
-  console.log(navigationFooter)
   const settings = await client.getSingle('Settings')
 
   return {

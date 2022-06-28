@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { CSSTransition } from 'react-transition-group'
+import { PrismicLink } from '@prismicio/react'
 import LogoDark from './icons/logo'
 import IconBlue from '../assets/img/icon-blue.png'
 import Link from 'next/link'
