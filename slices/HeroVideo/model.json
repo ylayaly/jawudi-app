@@ -1,0 +1,91 @@
+{
+  "id": "hero_video",
+  "type": "SharedSlice",
+  "name": "HeroVideo",
+  "description": "HeroVideo",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroVideo",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Title",
+            "allowTargetBlank": false,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,rtl,em"
+          }
+        },
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": "Subtitle",
+            "allowTargetBlank": false,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,rtl,em"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Call to action",
+            "placeholder": "Call to action",
+            "select": null
+          }
+        },
+        "TextLink": {
+          "type": "Text",
+          "config": {
+            "label": "Text call to action",
+            "placeholder": "Text call to action"
+          }
+        },
+        "QRcode": {
+          "type": "Image",
+          "config": {
+            "label": "QR Code",
+            "constraint": {
+              "width": 500,
+              "height": 500
+            },
+            "thumbnails": []
+          }
+        },
+        "textQRCode": {
+          "type": "Text",
+          "config": {
+            "label": "Text QRCode",
+            "placeholder": "Text QRCode"
+          }
+        },
+        "Video": {
+          "type": "Embed",
+          "config": {
+            "label": "Video",
+            "placeholder": "Video"
+          }
+        },
+        "Image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": [
+              {
+                "name": "Mobile",
+                "width": 400,
+                "height": 790
+              }
+            ]
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

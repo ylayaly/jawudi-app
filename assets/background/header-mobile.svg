@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 602.417 770.426">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Trazado_6" data-name="Trazado 6" d="M0,132.137s65.524-67.049,135.942-76.9S254.78,102.919,326,117.539s207.039-23.174,247.85,14.6c1.134,1.97,7.781,13.755,8.913,15.642,34.618,57.692,12.47,12.786,14.824,49.976,10.429,164.757-32.806,571.66-32.806,571.66H0Z" transform="translate(0 1341.047)" fill="#247f8c"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Trazado_1" data-name="Trazado 1" d="M0,136.374S49.874,65.684,103.474,55.3s90.454,50.269,144.664,65.683,157.59-24.433,188.654,15.39c.863,2.077,5.923,14.5,6.784,16.491,26.35,60.826,9.491,13.481,11.283,52.69,7.938,173.705-24.97,602.706-24.97,602.706H0Z" transform="translate(0 1341.047)" fill="#81e1af"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_82" data-name="Grupo 82" transform="translate(60.941 0)">
+    <g id="Enmascarar_grupo_6" data-name="Enmascarar grupo 6" transform="translate(541.476 2165.586) rotate(180)" opacity="0.695" clip-path="url(#clip-path)">
+      <rect id="Rectángulo_22" data-name="Rectángulo 22" width="562.961" height="799.399" transform="translate(0 1311.062)" fill="#247f8c"/>
+    </g>
+    <g id="Enmascarar_grupo_4" data-name="Enmascarar grupo 4" transform="translate(428 2149.308) rotate(180)" clip-path="url(#clip-path-2)">
+      <rect id="Rectángulo_10" data-name="Rectángulo 10" width="428.67" height="842.475" transform="translate(0.074 1306.834)" fill="#051834"/>
+    </g>
+  </g>
+</svg>

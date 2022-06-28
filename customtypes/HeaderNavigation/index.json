@@ -1,0 +1,46 @@
+{
+  "id": "HeaderNavigation",
+  "label": "Header Navigation",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "Links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "fields": {
+            "Link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "LinkText": {
+              "type": "Text",
+              "config": {
+                "label": "Link Text",
+                "placeholder": "Link Text"
+              }
+            },
+            "Type": {
+              "type": "Select",
+              "config": {
+                "label": "Type",
+                "placeholder": "Type",
+                "options": [
+                  "Desktop & Mobile",
+                  "Desktop",
+                  "Mobile"
+                ],
+                "default_value": "Desktop & Mobile"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

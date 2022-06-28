@@ -12,6 +12,35 @@
           "placeholder": ""
         }
       },
+      "logoColor": {
+        "type": "Select",
+        "config": {
+          "label": "Logo Color",
+          "placeholder": "Logo Color",
+          "options": [
+            "Dark",
+            "Light",
+            "Blue Light"
+          ],
+          "default_value": "Dark"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "hero_video": {
+              "type": "SharedSlice"
+            },
+            "navigation_bar": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO": {
       "title": {
         "type": "StructuredText",
         "config": {

@@ -1,0 +1,135 @@
+.hero-video
+{
+    &__background{
+        background-image: url(../../assets/background/hero-mobile.png);
+        background-position: 40% 0rem;
+        background-repeat: no-repeat;
+        background-size: 170%;
+        
+        @media (min-width: 360px) {
+            background-position: 50% 0rem;
+            background-size: 115%;
+        }
+
+        @screen xs {
+            background-position: top;
+            background-size: 100%;
+        }
+
+        @screen sm {
+            // background-image: url(../../assets/background/hero.svg);
+            // background-position: 50% 10%;
+            // background-size: cover;
+            background-position: 50% 0%;
+            background-size: 100% 80%;
+        }
+
+        @screen md {
+            // background-image: url(../../assets/background/hero.svg);
+            background-position: 50% 10%;
+            background-size: cover;
+        }
+
+        @screen lg {
+            background-image: url(../../assets/background/hero.svg);
+            background-position: 100% 15%;
+            background-size: cover;
+        }
+
+        @screen xl {
+            // background-position: 100% 30%;
+            background-position: 95% 10%;
+            background-size: 105%;
+        }
+
+        @screen 3xl {
+            background-position: 75% 30%;
+        }
+    }
+    &__richtext{
+        h1 {
+            @apply text-2xl;
+
+            strong {
+                @apply text-jw-green-1;
+            }
+
+            @screen sm{
+                @apply text-h1;
+            }
+
+            @screen md{
+                line-height: 2.5rem;
+            }
+
+            @screen xl{
+                @apply text-4xl;
+                width: 80%;
+            }
+
+            @screen 2xl{
+                @apply text-5xl;
+                line-height: 3.5rem;
+                width: 100%;
+            }
+
+            @screen 3xl{
+                @apply text-7xl;
+                line-height: 4.5rem;
+                
+            }
+        }
+
+        h3 {
+            @apply text-xs;
+
+            @screen sm{
+                @apply text-base;
+            }
+
+            @screen xl{
+                @apply text-h1;
+            }
+
+            @screen 3xl{
+                @apply text-13 ;
+                line-height: 3.5rem;
+            }
+        }
+    }
+
+    img {
+        max-height: 40rem;
+
+        @screen md {
+            max-height: 32rem;
+        }
+
+        @screen xl {
+            max-height: 40rem;
+        }
+
+        // @screen xxl {
+        //     max-height: 40rem;
+        // }
+
+        @screen 2xl {
+            max-height: 42rem;
+        }
+        
+        @screen 3xl {
+            max-height: 62rem;
+        }
+
+        @media (min-width: 2500px) {
+            max-height: 60rem;
+        }
+    }
+
+    &__vision{
+        background-image: url(../../assets/background/hero-mobile-bottom.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}

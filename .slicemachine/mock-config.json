@@ -1,5 +1,59 @@
 {
   "_cts": {
-    "page": {}
+    "page": {
+      "logoColor": {
+        "content": "Dark"
+      }
+    },
+    "HeaderNavigation": {
+      "Links": {}
+    },
+    "SocialNetworks": {
+      "NetworksLinks": {}
+    },
+    "SocialMedia": {},
+    "FooterNavigation": {
+      "Links": {},
+      "order": {
+        "content": 1
+      }
+    },
+    "Settings": {
+      "FooterText": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "NMLS": {
+        "content": "32449030"
+      },
+      "SocialNetwork": {}
+    }
+  },
+  "slices": {
+    "HeroVideo": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "subtitle": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "NavigationBar": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }

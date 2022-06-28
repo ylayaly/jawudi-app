@@ -1,0 +1,54 @@
+{
+  "id": "FooterNavigation",
+  "label": "Footer Navigation",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "TitleSection": {
+        "type": "Text",
+        "config": {
+          "label": "Title Section",
+          "placeholder": ""
+        }
+      },
+      "order": {
+        "type": "Number",
+        "config": {
+          "label": "Order",
+          "placeholder": "Order"
+        }
+      },
+      "Links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "fields": {
+            "Link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "LinkText": {
+              "type": "Text",
+              "config": {
+                "label": "Link Text",
+                "placeholder": "Link Text"
+              }
+            },
+            "textColor": {
+              "type": "Color",
+              "config": {
+                "label": "Text Color",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

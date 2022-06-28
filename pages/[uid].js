@@ -1,24 +1,30 @@
 import { createClient, linkResolver } from '../prismicio'
 import * as prismicH from '@prismicio/helpers';
-import Link from 'next/link';
+import { SliceZone } from '@prismicio/react'
+import { components } from '../slices'
+import Header from '../components/header';
+import Footer from '../components/footer';
 
-export default function Homepage({ page }) {
+export default function Homepage({ page, navigationHeader, navigationFooter, settings }) {
   if(!page || (page && !page.data) ){
-    return <> No data </>
+    return <></>
   }
-  
-  const { title } = page.data
+  page.data.slices.map(slice => {
+    if(slice.slice_type === "navigation_bar"){
+      slice.items = navigationHeader.data.Links
+    }
+    return slice
+  })
 
-  return <div className='container flex flex-col mx-auto justify-center items-center p-24'>
-    <div className='text-center'>
-      <h1 className='text-4xl font-bold text-blue-600'>{title[0].text}</h1>
-      <p className='text-base text-gray-400 mt-4'>Welcome to {title[0].text}</p>
-      <br/>
-      <Link href="/" >
-              <a className='mt-10 underline cursor-pointer'>Go to Index</a>
-      </Link>
+  return ( 
+  <>
+    <Header navigation={navigationHeader} settings={settings} />
+    <div>
+      <SliceZone slices={page.data.slices} components={components} navHeader={navigationHeader} />
     </div>
-  </div>
+    <Footer navigation={navigationFooter} settings={settings} />
+  </>
+  )
 }
 
 export async function getStaticPaths() {
@@ -34,8 +40,12 @@ export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
 
   const page = await client.getByUID('page', params.uid)
+  const navigationHeader = await client.getSingle('HeaderNavigation')
+  const navigationFooter = await client.getAllByType('FooterNavigation')
+  console.log(navigationFooter)
+  const settings = await client.getSingle('Settings')
 
   return {
-    props: { page },
+    props: { page, navigationHeader, navigationFooter, settings },
   }
 }

@@ -1,0 +1,18 @@
+.header-navigation {
+    span{
+        @apply block relative;
+
+        &.active{
+            @apply text-jw-turquoise-1;
+
+            &::after{
+                @apply w-full bg-jw-turquoise-1;
+                content: '';
+                display: block;
+                margin-top: .75rem;
+                height: 3px;
+            }
+        }
+        
+    }
+}

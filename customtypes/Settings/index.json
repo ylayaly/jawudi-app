@@ -1,0 +1,82 @@
+{
+  "id": "Settings",
+  "label": "Settings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "FooterText": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Footer Text",
+          "placeholder": "Footer Text (Made By)",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,hyperlink"
+        }
+      },
+      "NMLS": {
+        "type": "Text",
+        "config": {
+          "label": "NMLS",
+          "placeholder": "NMLS #"
+        }
+      }
+    },
+    "Social Media": {
+      "SocialNetwork": {
+        "type": "Group",
+        "config": {
+          "label": "Social Network",
+          "fields": {
+            "type": {
+              "type": "Select",
+              "config": {
+                "label": "Type",
+                "placeholder": "",
+                "options": [
+                  "Twitter",
+                  "Facebook",
+                  "Instagram",
+                  "Tik Tok"
+                ]
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "Store Links": {
+      "playStore": {
+        "type": "Link",
+        "config": {
+          "label": "Play Store",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "appStore": {
+        "type": "Link",
+        "config": {
+          "label": "App Store",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    }
+  }
+}

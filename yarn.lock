@@ -1162,13 +1162,21 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@prismicio/client@^6.4.3", "@prismicio/client@^6.5.1":
+"@prismicio/client@^6.4.3":
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-6.5.1.tgz#cf1da0d41579b18ab88684cf4146487cc340fc66"
   integrity sha512-SrluBNcTQ34UZI1oa+DLTWohaE8U2BU2QRpjZ9GOYa9Kty1RqWxFxr+qUTk7LS0QSbmVPEq1AngL5IR2HFZw2A==
   dependencies:
     "@prismicio/helpers" "^2.3.0"
     "@prismicio/types" "^0.1.27"
+
+"@prismicio/client@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-6.6.0.tgz#62d43678858a1b47fb08d6d2431f780a496c4a3d"
+  integrity sha512-bjsRf/sNxwo7hpAUWp36hR44j1lnh6X2Hx+YYvPcJZF/kBurGX49QoURJHGsevITcHV3fBpRLwkWBx9a5bTfwA==
+  dependencies:
+    "@prismicio/helpers" "^2.3.1"
+    "@prismicio/types" "^0.1.29"
 
 "@prismicio/helpers@^2.3.0", "@prismicio/helpers@^2.3.1":
   version "2.3.1"
@@ -1239,7 +1247,7 @@
     newtype-ts "^0.3.5"
     tslib "^2.3.1"
 
-"@prismicio/types@^0.1.22", "@prismicio/types@^0.1.27":
+"@prismicio/types@^0.1.22", "@prismicio/types@^0.1.27", "@prismicio/types@^0.1.29":
   version "0.1.29"
   resolved "https://registry.yarnpkg.com/@prismicio/types/-/types-0.1.29.tgz#52914a5ba304c8b75fdcf398e5014ac4364fdffb"
   integrity sha512-wp7DHqMK0FDMcFQfJbqTAzWNBkM6/rRq71jMw6x9m07nWCUqytJQQKg6/15uduIeSqPXmyfJW21drsmChGaxsQ==

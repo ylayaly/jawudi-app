@@ -1,12 +1,13 @@
 {
-  "id": "2e082056-9660-4e7e-85de-fd46cea2427b",
-  "uid": "amet-ducimus-et",
+  "id": "fc8f2c8c-a791-4f3c-a7c6-d986ed012e02",
+  "uid": "unde-maiores-amet",
   "type": "page",
   "data": {
+    "logoColor": "Dark",
     "title": [
       {
         "type": "paragraph",
-        "text": "Consequat et proident voluptate ipsum do consequat fugiat sit mollit aliquip ad do do.",
+        "text": "Magna cupidatat velit culpa excepteur. Esse Lorem magna mollit veniam minim commodo ea adipisicing non enim deserunt. Veniam aliqua dolor proident eu proident dolore enim magna elit mollit Lorem minim veniam sunt est.",
         "spans": []
       }
     ],
@@ -17,7 +18,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
     }
   }
 }

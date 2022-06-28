@@ -1,0 +1,40 @@
+.richtext{
+    h1 {
+        @apply text-2xl;
+
+        @screen 2xl{
+            @apply text-h1;
+        }
+    }
+    h2 {
+        @apply text-h3;
+
+        @screen 2xl{
+            @apply text-2xl;
+        }
+    }
+    h3 {
+        @apply text-base;
+
+        @screen 2xl{
+            @apply text-h3;
+        }
+    }
+    h4 {
+        @apply text-sm;
+
+        @screen 2xl{
+            @apply text-base;
+        }
+    }
+    h5 {
+        @apply text-xs;
+
+        @screen 2xl{
+            @apply text-sm;
+        }
+    }
+    h6 {
+        @apply text-h6;
+    }
+}
