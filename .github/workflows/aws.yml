@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    name: deploy
+    name: deployAws
     runs-on: ubuntu-latest
     strategy:
       matrix:
