@@ -49,6 +49,10 @@ module.exports = {
       letterSpacing: {
         widest: '.2em',
         xl: '.3em',
+      },
+      fontFamily : {
+        'lato': ['Lato'],
+        'aeonik': ['Aeonik'],
       }
     }
   },

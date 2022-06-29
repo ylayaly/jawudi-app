@@ -1,4 +1,5 @@
 @import 'base/prismic.scss';
+@import 'base/fonts.scss';
 @import 'components/heroVideo.scss';
 @import 'components/headerNavigation.scss';
 
@@ -121,9 +122,6 @@ header {
 
     @screen md{
         background-image: none;
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
     }
 
     &__text-made strong{
