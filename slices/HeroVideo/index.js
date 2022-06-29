@@ -73,7 +73,7 @@ const HeroVideo = ({ slice }) => {
     </div>
     {srcVideo !== "" && 
       <div className={'fixed inset-0 z-30 transition-opacity flex justify-center items-center ' + (showVideo ? 'opacity-100' : 'opacity-0 hidden')}>
-          <div onClick={() => setShowVideo(false)} className='absolute inset-0 bg-black opacity-80 w-full h-full'></div>
+          <div onClick={() => setShowVideo(false)} className='absolute inset-0 bg-black opacity-80 w-full h-full cursor-pointer'></div>
           <div className='relative w-full max-w-4xl bg-black p-4'>
             <iframe className='w-full aspect-video aspect-h-9' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameBorder="0" src={srcVideo}></iframe>
           </div>
