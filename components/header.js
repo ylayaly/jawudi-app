@@ -40,26 +40,28 @@ export default function Header({navigation, settings}) {
             </div>
             <div id="header-nav" className={'md:hidden transition-opacity fixed inset-0 ' + (open ? 'bg-white  min-h-screen overflow-scroll' : close ? 'close' : 'hidden')}>
                 <div id="nav-links" className={'relative h-auto '}>
-                    <div className='bg-header-mobile absolute w-full h-full'></div>
-                    <div className='absolute right-0 top-0 pt-24 px-9 md:px-12 z-10'>
-                        <button className='w-5 h-5' type="button" onClick={() => {closeMenu()}}><Icon icon="close"/></button>
+                    {/* <div className=' absolute w-full h-full'></div> */}
+                    <div className='bg-header-mobile pb-40'>
+                        <div className='absolute right-0 top-0 pt-24 px-9 md:px-12 z-10'>
+                            <button className='w-5 h-5' type="button" onClick={() => {closeMenu()}}><Icon icon="close"/></button>
+                        </div>
+                        <div className='pt-24 px-9 md:px-12 relative text-jw-green-4 font-lato tracking-xl font-medium uppercase flex flex-col gap-8 '>
+                            {links.map((link, i) => {
+                                return (
+                                    (link.Link && link.Link.link_type !== "Any") ?
+                                    <PrismicLink field={link.Link}>
+                                    <span key={i} className={' ' + ( i === 0 ? 'active' : '' )}>{link.LinkText}</span>
+                                    </PrismicLink>
+                                    :
+                                    <span key={i} className={' ' + ( i === 0 ? 'active' : '' )}>{link.LinkText}</span>
+                                )
+                            })}
+                        </div>
+                        <div className='relative px-9 md:px-12 mt-18 text-jw-green-1'>
+                                <Socials settings={settings} className="" />
+                        </div>
                     </div>
-                    <div className='pt-24 px-9 md:px-12 relative text-jw-green-4 font-lato tracking-xl font-medium uppercase flex flex-col gap-8 '>
-                        {links.map((link, i) => {
-                            return (
-                                (link.Link && link.Link.link_type !== "Any") ?
-                                <PrismicLink field={link.Link}>
-                                <span key={i} className={' ' + ( i === 0 ? 'active' : '' )}>{link.LinkText}</span>
-                                </PrismicLink>
-                                :
-                                <span key={i} className={' ' + ( i === 0 ? 'active' : '' )}>{link.LinkText}</span>
-                            )
-                        })}
-                    </div>
-                    <div className='relative px-9 md:px-12 mt-18 text-jw-green-1'>
-                            <Socials settings={settings} className="" />
-                    </div>
-                    <div className='left-0 right-0 bottom-0 px-9 md:px-12 py-28'>
+                    <div className='left-0 right-0 bottom-0 px-9 md:px-12 pb-28'>
                         <div className='w-28 md:w-48'><Link href={"/"}><a><LogoDark /></a></Link></div>
                     </div>
                 </div>
