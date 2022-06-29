@@ -1,6 +1,7 @@
 name: Prismic Deploy Jawudi App
 on:
   repository_dispatch:
+    types: [pismic_action]
 
 jobs:
   deploy:
