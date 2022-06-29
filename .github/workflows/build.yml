@@ -8,20 +8,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
-    permissions:
-      contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    steps:
-      - uses: actions/checkout@v3
-
+    	steps:
+      - uses: actions/checkout@v2
+      
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: '12.x'
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v1
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -33,7 +29,6 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./public
