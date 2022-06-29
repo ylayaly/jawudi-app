@@ -3,13 +3,15 @@
 name: Deploy Jawudi App main branch
 
 on:
+  repository_dispatch:
+    types: [pismic_action]
   push:
     branches:
       - main
 
 jobs:
   deploy:
-    name: deploy
+    name: deployAws
     runs-on: ubuntu-latest
     strategy:
       matrix:
