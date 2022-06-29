@@ -21,15 +21,11 @@
         }
 
         @screen sm {
-            // background-image: url(../../assets/background/hero.svg);
-            // background-position: 50% 10%;
-            // background-size: cover;
             background-position: 50% 0%;
             background-size: 100% 80%;
         }
 
         @screen md {
-            // background-image: url(../../assets/background/hero.svg);
             background-position: 50% 10%;
             background-size: cover;
         }
@@ -41,7 +37,6 @@
         }
 
         @screen xl {
-            // background-position: 100% 30%;
             background-position: 95% 10%;
             background-size: 105%;
         }
@@ -102,31 +97,38 @@
         }
     }
 
-    img {
-        max-height: 40rem;
-
-        @screen md {
-            max-height: 32rem;
-        }
-
-        @screen xl {
+    &__image{
+        img {
+            min-height: 40rem;
             max-height: 40rem;
-        }
+            width: auto !important;
+            height: auto !important;
+            min-width: auto !important;
 
-        // @screen xxl {
-        //     max-height: 40rem;
-        // }
+            @screen md {
+                min-height: 32rem;
+                max-height: 32rem;
+            }
 
-        @screen 2xl {
-            max-height: 42rem;
-        }
-        
-        @screen 3xl {
-            max-height: 62rem;
-        }
+            @screen xl {
+                min-height: 40rem;
+                max-height: 40rem;
+            }
 
-        @media (min-width: 2500px) {
-            max-height: 60rem;
+            @screen 2xl {
+                min-height: 42rem;
+                max-height: 42rem;
+            }
+            
+            @screen 3xl {
+                min-height: 62rem;
+                max-height: 62rem;
+            }
+
+            @media (min-width: 2500px) {
+                min-height: 60rem;
+                max-height: 60rem;
+            }
         }
     }
 

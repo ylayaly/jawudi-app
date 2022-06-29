@@ -59,7 +59,7 @@ const HeroVideo = ({ slice }) => {
             <div className='absolute inset-0 flex justify-center items-center z-10'>
               <button type="button" onClick={() => setShowVideo(true)} className='block w-1/2'><Icon icon='play' /></button>
             </div>
-            <div className='hidden md:flex'><Image src={srcImage} alt="" width={width} height={height}/></div>
+            <div className='hidden md:flex'><img src={srcImage} alt="" width={width} height={height}/></div>
             <div className='flex md:hidden'><Image src={srcImageMobile} alt="" width={hero_image_mobile.dimensions.width} height={hero_image_mobile.dimensions.height}/></div>
           </div>
         </div>
