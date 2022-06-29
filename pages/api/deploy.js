@@ -2,7 +2,7 @@ var XMLHttpRequest = require('xhr2');
 
 export default async function handler(req, res) {  
   var data = {
-    "event_type": "pismic_actionnn"
+    "event_type": "pismic_action"
   }
   var url = 'https://api.github.com/repos/ylayaly/jawudi-app/dispatches'
 
