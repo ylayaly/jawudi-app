@@ -82,20 +82,20 @@ header {
 }
 
 .bg-header-mobile{
-    background-image: url(../assets/background/header-mobile.svg);
-    background-position: 35% 75%;
+    background-image: url(../assets/background/bg-header.svg);
+    background-position: bottom;//35% 75%;
     background-repeat: no-repeat;
-    background-size: 160% 140%;
+    background-size: cover; //160% 140%;
 
-    @media (orientation: landscape){
-        background-position: 35% 120%;
-        background-size: 141%;
-    }
+    // @media (orientation: landscape){
+    //     background-position: 35% 120%;
+    //     background-size: 141%;
+    // }
 
-    @media (max-width: 500px){
-        background-position: 35% 110%;
-        background-size: 70rem;    
-    }
+    // @media (max-width: 500px){
+    //     background-position: 35% 110%;
+    //     background-size: 70rem;    
+    // }
 }
 
 .footer {
