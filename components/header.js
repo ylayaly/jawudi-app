@@ -42,10 +42,10 @@ export default function Header({navigation, settings}) {
                 <div id="nav-links" className={'relative h-auto '}>
                     {/* <div className=' absolute w-full h-full'></div> */}
                     <div className='bg-header-mobile pb-40'>
-                        <div className='absolute right-0 top-0 pt-24 px-9 md:px-12 z-10'>
+                        <div className='absolute right-0 top-0 pt-20 px-9 md:px-12 z-10'>
                             <button className='w-5 h-5' type="button" onClick={() => {closeMenu()}}><Icon icon="close"/></button>
                         </div>
-                        <div className='pt-24 px-9 md:px-12 relative text-jw-green-4 font-lato tracking-xl font-medium uppercase flex flex-col gap-8 '>
+                        <div className='pt-20 px-9 md:px-12 relative text-jw-green-4 font-lato tracking-xl font-medium uppercase flex flex-col gap-8 '>
                             {links.map((link, i) => {
                                 return (
                                     (link.Link && link.Link.link_type !== "Any") ?
