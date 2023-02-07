@@ -34,10 +34,6 @@ jobs:
         aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
         aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
         aws configure set region $AWS_REGION
-        AWS_MAX_ATTEMPTS=10
-          aws s3 sync ./dist/ s3://jawudi-my-test/ --delete
-          aws cloudfront create-invalidation --distribution-id E2R3MLYHP2GZOA --paths "/*"
-
     - name: Set Environment
       env:
         API_KEY: ${{ secrets.DEV_TRANSFER_API_KEY }}
