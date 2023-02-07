@@ -43,4 +43,7 @@ jobs:
         CLOUDFRONT: E1M89FSLOA6VM2
       run: |
           echo API_KEY=$API_KEY >> .env
+          echo API_URL=$API_URL >> .env
+          echo BUCKET=$BUCKET >> .env
+          echo CLOUDFRONT=$CLOUDFRONT >> .env
     - run: components-v1
