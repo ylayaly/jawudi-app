@@ -1,0 +1,318 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "top_color": {
+        "__TYPE__": "FieldContent",
+        "value": "#051834",
+        "type": "Color"
+      },
+      "background_color": {
+        "__TYPE__": "FieldContent",
+        "value": "#247F8C",
+        "type": "Color"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "title",
+            {
+              "__TYPE__": "FieldContent",
+              "type": "Text",
+              "value": "Trust"
+            }
+          ],
+          [
+            "description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "The sheer scale of our ambition: networking the global African diaspora to realize the entrepreneurial potential of the continent, requires that we build and nurture trust - within our team at Jawudi, with our users, partners and financial backers.",
+                    "spans": []
+                  },
+                  "direction": "ltr"
+                }
+              ]
+            }
+          ],
+          [
+            "hilight_description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "We’ll build trust with you by doing as we say and saying as we’ve done. Always.",
+                    "spans": []
+                  },
+                  "direction": "ltr"
+                }
+              ]
+            }
+          ],
+          [
+            "icon",
+            {
+              "origin": {
+                "id": "xnRg3xDcNnE",
+                "url": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwzfHxmcnVpdHxlbnwwfHx8fDE2NzMzODc3MDU&ixlib=rb-4.0.3&q=80",
+                "width": 7173,
+                "height": 10041
+              },
+              "url": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwzfHxmcnVpdHxlbnwwfHx8fDE2NzMzODc3MDU&ixlib=rb-4.0.3&q=80&rect=2045%2C2772%2C3188%2C4463&w=7173&h=10041",
+              "width": 7173,
+              "height": 10041,
+              "edit": {
+                "background": "transparent",
+                "zoom": 2.25,
+                "crop": {
+                  "x": 2045,
+                  "y": 2772
+                }
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      },
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "title",
+            {
+              "__TYPE__": "FieldContent",
+              "type": "Text",
+              "value": "Transparency"
+            }
+          ],
+          [
+            "description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "We’re offering an alternative to the lack of transparency in financial services, especially in the cross border, p2p and payments space. To that end, we’ll create world class products to solve your financial needs, price them fairly and tell you EXACTLY what you’re paying for.",
+                    "spans": []
+                  },
+                  "direction": "ltr"
+                }
+              ]
+            }
+          ],
+          [
+            "hilight_description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "We believe that we shouldn’t have to resort to tricks to earn an income by serving you, all we need to do is wow you with our products and customer service; so we focus our energy on building delightful experiences for you.",
+                    "spans": []
+                  },
+                  "direction": "ltr"
+                }
+              ]
+            }
+          ],
+          [
+            "icon",
+            {
+              "url": "https://images.unsplash.com/photo-1528821128474-27f963b062bf?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJ1aXR8ZW58MHx8fHwxNjczMzg3NzA1&ixlib=rb-4.0.3&q=80&rect=963%2C614%2C3172%2C2115&w=5170&h=3447",
+              "origin": {
+                "id": "lZ8onQ1wuY8",
+                "url": "https://images.unsplash.com/photo-1528821128474-27f963b062bf?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJ1aXR8ZW58MHx8fHwxNjczMzg3NzA1&ixlib=rb-4.0.3&q=80",
+                "width": 5170,
+                "height": 3447
+              },
+              "width": 5170,
+              "height": 3447,
+              "edit": {
+                "background": "transparent",
+                "zoom": 1.63,
+                "crop": {
+                  "x": 963,
+                  "y": 614
+                }
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      },
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "title",
+            {
+              "__TYPE__": "FieldContent",
+              "type": "Text",
+              "value": "Applied Knowledge"
+            }
+          ],
+          [
+            "description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "We dream very big and push the envelope of what’s possible. So we expect to constantly face limits to our knowledge and skill. At Jawudi, our culture is one where it is ok to say “I don’t know”, as long as it’s followed by “I’ll learn it and/or find someone to help me figure it out”. We accept our limitations but we do not tolerate them.",
+                    "spans": []
+                  },
+                  "direction": "ltr"
+                }
+              ]
+            }
+          ],
+          [
+            "hilight_description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "We have a growth mindset; we constantly learn, test, document and share our knowledge.",
+                    "spans": []
+                  },
+                  "direction": "ltr"
+                }
+              ]
+            }
+          ],
+          [
+            "icon",
+            {
+              "url": "https://images.unsplash.com/photo-1600423115367-87ea7661688f?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxNHx8ZnJ1aXR8ZW58MHx8fHwxNjczMzg3NzA1&ixlib=rb-4.0.3&q=80&rect=487%2C1925%2C1388%2C1850&w=3024&h=4032",
+              "origin": {
+                "id": "t2ZIt-WNXrk",
+                "url": "https://images.unsplash.com/photo-1600423115367-87ea7661688f?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxNHx8ZnJ1aXR8ZW58MHx8fHwxNjczMzg3NzA1&ixlib=rb-4.0.3&q=80",
+                "width": 3024,
+                "height": 4032
+              },
+              "width": 3024,
+              "height": 4032,
+              "edit": {
+                "background": "transparent",
+                "zoom": 2.18,
+                "crop": {
+                  "x": 487,
+                  "y": 1925
+                }
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "threeColumns",
+    "primary": {
+      "top_color": {
+        "__TYPE__": "FieldContent",
+        "value": "transparent",
+        "type": "Color"
+      },
+      "background_color": {
+        "__TYPE__": "FieldContent",
+        "value": "#051834",
+        "type": "Color"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "title",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "speech",
+              "type": "Text"
+            }
+          ],
+          [
+            "description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Cupidatat fugiat sit ut qui ad consequat consectetur ullamco adipisicing enim magna labore ut."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "hilight_description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Cillum in consectetur aliquip ut adipisicing esse nostrud ullamco est magna."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "icon",
+            {
+              "url": "https://images.unsplash.com/photo-1528821128474-27f963b062bf?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJ1aXR8ZW58MHx8fHwxNjczMzg3NzA1&ixlib=rb-4.0.3&q=80&rect=1091%2C727%2C2988%2C1992&w=5170&h=3447",
+              "origin": {
+                "id": "lZ8onQ1wuY8",
+                "url": "https://images.unsplash.com/photo-1528821128474-27f963b062bf?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJ1aXR8ZW58MHx8fHwxNjczMzg3NzA1&ixlib=rb-4.0.3&q=80",
+                "width": 5170,
+                "height": 3447
+              },
+              "width": 5170,
+              "height": 3447,
+              "edit": {
+                "background": "transparent",
+                "zoom": 1.73,
+                "crop": {
+                  "x": 1091,
+                  "y": 727
+                }
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

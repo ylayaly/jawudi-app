@@ -3,16 +3,27 @@
         @apply block relative;
 
         &.active{
-            @apply text-jw-turquoise-1;
+            @apply text-jw-green-1
 
-            &::after{
-                @apply w-full bg-jw-turquoise-1;
-                content: '';
-                display: block;
-                margin-top: .75rem;
-                height: 3px;
-            }
         }
         
+    }
+
+    &.text-white {
+        span.active{
+
+            &::after{
+                @apply bg-white;
+            }
+        }   
+    }
+
+    &.text-jw-dark-blue {
+        span.active{
+
+            &::after{
+                @apply bg-jw-dark-blue;
+            }
+        }   
     }
 }

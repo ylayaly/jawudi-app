@@ -40,6 +40,17 @@
             }
           }
         }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "item": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     }
   }

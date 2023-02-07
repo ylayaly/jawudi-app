@@ -1,0 +1,134 @@
+{
+  "id": "post",
+  "label": "Post",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+        }
+      },
+      "shortDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Short Description",
+          "placeholder": "Short Description",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink"
+        }
+      },
+      "subtitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Subtitle",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+        }
+      },
+      "publicationDate": {
+        "type": "Date",
+        "config": {
+          "label": "Publication Date",
+          "placeholder": ""
+        }
+      },
+      "author": {
+        "type": "Link",
+        "config": {
+          "label": "Author",
+          "select": "document",
+          "customtypes": [
+            "author"
+          ]
+        }
+      },
+      "postImage": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "rich_text": {
+              "type": "SharedSlice"
+            },
+            "full_image": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Tags": {
+      "tags": {
+        "type": "Group",
+        "config": {
+          "label": "Post Tags",
+          "fields": {
+            "tag": {
+              "type": "Link",
+              "config": {
+                "label": "Tag",
+                "select": "document",
+                "customtypes": [
+                  "post-tag"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO": {
+      "Title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "openGraph": {
+        "type": "Image",
+        "config": {
+          "label": "Open Graph",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

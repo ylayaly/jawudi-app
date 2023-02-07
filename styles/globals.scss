@@ -2,6 +2,44 @@
 @import 'base/fonts.scss';
 @import 'components/heroVideo.scss';
 @import 'components/headerNavigation.scss';
+@import 'components/heroImage.scss';
+@import 'components/grid.scss';
+@import 'components/peopleSlide.scss';
+@import 'components/heroPostList.scss';
+@import 'components/products.scss';
+@import 'components/contactForm.scss';
+@import 'components/fees.scss';
+@import 'components/detailFund.scss';
+@import 'components/legalPage.scss';
+@import 'base/loading.scss';
+@import 'components/heroValues.scss';
+@import 'components/cta.scss';
+@import '~video-react/styles/scss/video-react';
+
+* {
+    --header-height : calc(1.5rem + 4rem + 2rem);
+
+    @screen xs {
+            --header-height : calc(1.5rem + 5rem + 1rem);
+    }
+    
+    @screen md {
+            --header-height : calc(2.5rem + 5rem + 1.5rem);
+    }
+    
+    @screen xl {
+            --header-height : calc(2.5rem + 7rem + 0rem);
+    }
+}
+
+
+html{
+    font-family: "Helvetica Neue";
+}
+
+body {
+    @apply bg-jw-dark-blue;
+}
 
 @media (max-width: 359px) {
     html{
@@ -71,12 +109,12 @@ header {
     }
 }
 
-.logo-blue img{
+.logo-blue svg{
     width: 3rem !important;
     height: 3rem !important;
 }
 
-.fixed .logo-blue img{
+.fixed .logo-blue svg{
     width: 2rem !important;
     height: 2rem !important;
 }
@@ -99,7 +137,7 @@ header {
 }
 
 .footer {
-    background-image: url(../assets/background/footer-bottom.png);
+    background-image: url(../assets/background/bg_footer_mobile.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,21 +171,25 @@ header {
         @apply relative;
 
     }
-    @media (min-width: 768px) and (max-width: 1024px){
-        &:after{
-            @apply absolute w-full h-4 py-4 bg-jw-green-5;
-            content: '';
-            bottom: -1.9rem;
+    // @media (min-width: 768px) and (max-width: 1024px){
+    //     &:after{
+    //         @apply absolute w-full h-2 py-2 bg-jw-green-5;
+    //         content: '';
+    //         bottom: -0.9rem;
 
-        }
-    }
+    //     }
+    // }
 
 
 }
 
+header {
+    z-index: 110;
+}
+
 footer.fixed {
     bottom: 0;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
 }
 
@@ -159,9 +201,105 @@ footer:not(.fixed) {
 }
 .bg-footer{
     @screen md{
-        background-image: url(../assets/background/footer.svg);
+        background-image: url(../assets/background/bg__footer.png);
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    @screen 3xl{
+        background-image: url(../assets/background/bg__footer_3xl.png);
+    }
+}
+
+.bg-footer-2{
+    @screen md{
+        background-image: url(../assets/background/bg_footer__2.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.hero {
+    transition: padding 0.6s ease;
+}
+
+.bg__gradient {
+    background-image: url(../assets/background/gradient.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (min-width: 1920px){
+    .\33xl\:container {
+        max-width: 1570px;
+    }
+}
+
+@media (min-width: 2560px){
+    .\33xl\:container {
+        max-width: 1570px;
+    }
+}
+
+.Toolbar{
+    display: none !important;
+}
+
+.p-richtext {
+    @apply my-6;
+    
+    @screen xs {
+        @apply my-8;
+    }
+
+    @screen sm {
+        @apply my-14;
+    }
+     
+    @screen md {
+        @apply my-20;
+    }
+    
+    @screen xl {
+        @apply my-28;
+    }
+}
+
+.caption{
+    @apply text-2;
+
+    @screen md {
+        @apply text-xs;
+    }
+    @screen xxl{
+        font-size: 15px
+    }
+}
+
+.btn__more {
+    @apply w-4 h-4 relative;
+
+    @screen lg{
+        @apply w-8 h-8;
+
+        &.btn_qr {
+            @apply w-6 h-6;
+        }
+    }
+    
+    &::before{
+        @apply inset-0;
+
+        content: '';
+        position: absolute;
+        background-image: url(../assets/img/arrow-white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: rotate(-90deg);
     }
 }

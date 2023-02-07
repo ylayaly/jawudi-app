@@ -1,0 +1,100 @@
+{
+  "id": "tabs",
+  "type": "SharedSlice",
+  "name": "Tabs",
+  "description": "Tabs",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Tabs",
+      "primary": {
+        "UID": {
+          "type": "Text",
+          "config": {
+            "label": "UID",
+            "placeholder": "Key to anchor link"
+          }
+        }
+      },
+      "items": {
+        "Title": {
+          "type": "Text",
+          "config": {
+            "label": "Tab Title",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description Desktop",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "information": {
+          "type": "Text",
+          "config": {
+            "label": "Information",
+            "placeholder": ""
+          }
+        },
+        "detail": {
+          "type": "Text",
+          "config": {
+            "label": "Detail Information",
+            "placeholder": ""
+          }
+        },
+        "mobileText": {
+          "type": "Text",
+          "config": {
+            "label": "Mobile Text",
+            "placeholder": ""
+          }
+        },
+        "viedo": {
+          "type": "Link",
+          "config": {
+            "label": "Video",
+            "placeholder": "",
+            "select": "media"
+          }
+        },
+        "tabImage": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": [
+              {
+                "name": "Slide 2",
+                "width": 500,
+                "height": 1000
+              },
+              {
+                "name": "Slide 3",
+                "width": 500,
+                "height": 1000
+              }
+            ]
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

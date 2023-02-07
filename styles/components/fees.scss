@@ -1,0 +1,167 @@
+.fees {
+    .hero__richtext {
+        h1 {
+            @apply text-3xl;
+
+            @screen xl {
+                @apply text-4xl;
+            }
+
+            @screen 2xl {
+                @apply text-5xl;
+            }
+
+            strong {
+                @apply text-jw-blue-2/90;
+            }
+        }
+
+        h4 {
+            @apply font-book leading-none text-2xl;
+
+            @screen 3xl{
+                @apply text-4xl ;
+                line-height: 3.5rem;
+            }
+            
+            strong {
+                @apply text-jw-blue-2/90 font-book;
+            }
+        }
+        h5 {
+            @apply font-book leading-tight text-base;
+
+            @screen lg {
+                @apply text-lg;
+            }
+
+            @screen 2xl {
+                @apply text-22;
+            }
+        
+        }
+
+        p {
+            font-size: 0.8rem;
+            line-height: 15px;
+
+            @screen sm {
+                font-size: 12px;
+            }
+
+            @screen lg {
+                font-size: 1rem;
+                line-height: 23px;
+            }
+        }
+    }
+
+    .jw-select {
+        position: relative;
+    }
+
+    .jw-select::before {
+        @apply top-0 right-0 left-auto bottom-0 absolute block h-full;
+        content: '';
+        width: 0.8rem;
+        background-image: url(../../assets/img/arrow-white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: rotate(-90deg);
+        transition-duration: 0.5s;
+        transition-property: transform;
+
+        @screen xxl {
+            width: 1.2rem;
+        }
+    }
+
+    .jw-input{
+        position: relative;
+    }
+
+    .jw-select::after, .jw-input::after{
+        @apply absolute right-0 left-0;
+        content: '';
+        height: 1px;
+        bottom: 0px;
+        background-color: white;
+
+        @screen md {
+            height: 2px;
+            bottom: -2px;
+        }
+
+        @screen 2xl {
+            bottom: -5px;
+        }
+    }
+
+    .jw-select.open::before {
+        transform: rotate(90deg);
+    }
+
+    .jw-dropdown.top-full{
+        top: calc(100% + 2px);
+        @screen lg {
+            top: calc(100% + 5px);
+        }
+    }
+
+
+    #searchInput::placeholder {
+        color: white;
+    }
+
+    .richtext {
+        a.no-underline {
+            text-decoration: none;
+        }
+    }
+
+    input.text-jw-turquoise-2::placeholder {
+        color: #247F8C;
+    }
+
+    .bg-flag {
+        background-image: url(../../assets/img/flag-usa.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 1rem;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+
+        @screen md {
+            background-size: 1.5rem;
+            padding-left: 6rem;
+        }
+
+        &::before {
+            @apply font-aeonik;
+            content: '+ 1';
+            position: absolute;
+            color: white;
+            left: 1.5rem;
+            font-size: 12px;
+            top: 0px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            @screen md {
+                font-size: 18px;
+                left: 2.5rem;
+            }
+        }
+    }
+
+    .Pay.amount {
+        @apply text-jw-green-1;
+    }
+
+    .Service {
+        @apply text-jw-green-8;
+    }
+}

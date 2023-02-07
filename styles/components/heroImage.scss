@@ -1,0 +1,142 @@
+.hero-image {
+    &__background{
+        background-image: url(../../assets/background/BgTheFundMobile.png); //url(../../assets/background/HeroFundMobile.png);
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+        background-size: cover;
+
+
+        @media (min-width: 375px) {
+            background-position: 0% 10%;
+            background-size: 101%;
+        }
+        @screen xs {
+            background-image: url(../../assets/background/BgTheFund.png); //url(../../assets/background/FondoHeroFund.png);
+            background-position: 70% 0%;
+            background-size: cover;
+        }
+        @screen xl {
+            background-position: 66% 0%;
+        }
+
+        @screen 2xl {
+            background-position: 100% 40%;
+        }
+
+        @media (min-width: 2560px) {
+            background-position: 25% 35%;
+        }
+
+        @media (min-width: 2560px) {
+            background-position: 25% 25%;
+        }
+    }
+
+    ::placeholder {
+        font-size: 6px;
+        letter-spacing: 0.2em;
+        color: white;
+
+        @screen md {
+            @apply text-xs
+        }
+
+        @screen xl {
+            @apply text-base
+        }
+    }
+     
+
+    
+    .hero__richtext {
+        h2 {
+            @apply mb-1;
+            font-size: 1.25rem;
+            line-height: 1rem;
+        
+
+            @screen md {
+                font-size: 2rem;
+                line-height: 1.75rem;
+            }
+
+            @screen xl {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+            }
+
+            @screen 2xl {
+                font-size: 3.25rem;
+                line-height: 3.25rem;
+            }
+        }
+
+        p {
+            @apply text-xs;
+
+            @screen md {
+                @apply text-base;
+                line-height: 1.25rem;
+            }
+
+            @screen xxl {
+                @apply text-22;
+                line-height: 1.75rem;
+            }
+
+            @screen 3xl {
+                line-height: 2rem;
+            }
+        }
+    }
+
+    .hero__richtext h4 {
+        font-size: 0.80rem;
+        line-height: 1rem;
+
+        @screen md {
+            font-size: 1.2rem;
+            line-height: 1.75rem;
+        }
+
+        @screen xl {
+            font-size: 1.75rem;
+            line-height: 2.5rem;
+        }
+
+        @screen 2xl {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+
+        .blue {
+            @apply text-jw-dark-blue;
+            &.animate{
+                @apply relative inline-block px-2;
+
+                &::before {
+                    @apply absolute inset-0 bg-jw-green-1;
+                    content: '';
+                }
+
+                span{
+                    position: relative;
+                }
+            }
+            
+        }
+    }
+
+    .hero__richtext.animate-active h4 {
+        .blue {
+            &.animate{
+
+                &::before {
+                    @apply animate-showFull;
+                }
+            }
+            
+        }
+    }
+    
+}

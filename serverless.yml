@@ -1,2 +1,2 @@
-jawudiApp:
+jawudiWeb:
   component: "@sls-next/serverless-component"

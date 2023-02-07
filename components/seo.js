@@ -1,12 +1,11 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Head from 'next/head'
 
 const Seo = ({ data }) => {
 
   return (
-    <Helmet
-      title={data.title}
-      titleTemplate={`Jawudi | ${data.title}`}>
+    <Head>
+      <title>{`${data.title} | Jawudi`}</title>
       <meta name='description' content={data.description} />
       <meta property='og:title' content={data.title} />
       <meta property='og:image' content={data.image} />
@@ -20,7 +19,8 @@ const Seo = ({ data }) => {
         sizes='32x32'
         href='favicon.png'
       />
-    </Helmet>
+      <link href="https://use.typekit.net/pjo6tun.css" rel="stylesheet" type="text/css"></link>
+    </Head>
   )
 }
 

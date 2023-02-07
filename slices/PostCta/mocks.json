@@ -1,0 +1,37 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "text": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Excepteur laborum amet officia anim occaecat in enim. Sunt consequat duis commodo nostrud qui reprehenderit dolore. Occaecat fugiat elit dolore irure id veniam enim labore duis eu nulla nulla duis."
+            }
+          }
+        ]
+      },
+      "textLink": {
+        "__TYPE__": "FieldContent",
+        "value": "pet",
+        "type": "Text"
+      },
+      "sliceLink": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://twitter.com"
+        }
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

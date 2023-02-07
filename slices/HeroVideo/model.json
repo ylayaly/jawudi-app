@@ -23,10 +23,17 @@
         "subtitle": {
           "type": "StructuredText",
           "config": {
-            "label": "Subtitle",
+            "label": "Subtitle Dark",
             "placeholder": "Subtitle",
-            "allowTargetBlank": false,
-            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,rtl,em"
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image"
+          }
+        },
+        "subtitle_white": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitle White",
+            "placeholder": "Subtitle White"
           }
         },
         "link": {
@@ -62,11 +69,11 @@
             "placeholder": "Text QRCode"
           }
         },
-        "Video": {
-          "type": "Embed",
+        "youtubeVideo": {
+          "type": "Text",
           "config": {
-            "label": "Video",
-            "placeholder": "Video"
+            "label": "Youtube Video ID",
+            "placeholder": "Youtube Video ID"
           }
         },
         "Image": {
@@ -81,6 +88,14 @@
                 "height": 790
               }
             ]
+          }
+        },
+        "localVideo": {
+          "type": "Link",
+          "config": {
+            "label": "Video",
+            "placeholder": "",
+            "select": "media"
           }
         }
       },

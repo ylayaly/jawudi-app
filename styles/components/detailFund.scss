@@ -1,0 +1,57 @@
+.detail-fund {
+    .bg-goal-detail {
+        background-image: url(../../assets/background/BgGoalDetail.png);
+    }
+
+    .richtext__jw{
+        div:first-child > h1{
+            position: relative;
+            left: -0.75rem;
+            font-weight: 350;
+        }
+
+        h1 {
+            @apply text-lg;
+
+            @screen md {
+                @apply text-2xl;
+            }
+
+            @screen xxl {
+                @apply text-4xl;
+            }
+
+            @screen 2xl {
+                @apply text-6xl;
+            }
+        }
+
+        p {
+            margin-bottom: 1.7rem;
+            @apply text-xs;
+
+            @screen lg{
+                @apply text-sm;
+            }
+
+            @screen 2xl {
+                @apply text-base;
+            }
+
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+
+        .mb-0 {
+            margin-bottom: 0px;
+        }
+    }
+
+    .close {
+        background-image: url(../../assets/background/bgBtnClose.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+}

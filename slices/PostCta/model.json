@@ -1,0 +1,44 @@
+{
+  "id": "post_cta",
+  "type": "SharedSlice",
+  "name": "PostCta",
+  "description": "PostCTA",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "PostCTA",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "multi": "heading1,paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink"
+          }
+        },
+        "textLink": {
+          "type": "Text",
+          "config": {
+            "label": "Text Link",
+            "placeholder": ""
+          }
+        },
+        "sliceLink": {
+          "type": "Link",
+          "config": {
+            "allowTargetBlank": true,
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

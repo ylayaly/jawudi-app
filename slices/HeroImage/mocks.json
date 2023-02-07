@@ -1,0 +1,156 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Consequat ullamco quis dolor."
+            }
+          }
+        ]
+      },
+      "content": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Cupidatat cupidatat proident sint officia ex labore culpa enim ut anim eu consectetur."
+            }
+          }
+        ]
+      },
+      "heroImage": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+          "width": 3456,
+          "height": 3456
+        },
+        "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+        "width": 3456,
+        "height": 3456,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "backgroundImage": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+          "width": 3648,
+          "height": 4560
+        },
+        "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+        "width": 3648,
+        "height": 4560,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "background_image_mobile": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+          "width": 4016,
+          "height": 6016
+        },
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+        "width": 4016,
+        "height": 6016,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "showForm": {
+        "__TYPE__": "BooleanContent",
+        "value": true
+      },
+      "formID": {
+        "__TYPE__": "FieldContent",
+        "value": "desk",
+        "type": "Text"
+      },
+      "formText": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Non do deserunt veniam eu enim eu ea sit sit ipsum aliquip."
+            }
+          }
+        ]
+      },
+      "textBtn": {
+        "__TYPE__": "FieldContent",
+        "value": "reach",
+        "type": "Text"
+      },
+      "descriptionForm": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Do excepteur cillum ex tempor laborum do sunt Lorem. Culpa mollit duis officia occaecat ut proident deserunt nostrud ad incididunt est anim non sunt fugiat."
+            }
+          }
+        ]
+      },
+      "submitButtomText": {
+        "__TYPE__": "FieldContent",
+        "value": "now",
+        "type": "Text"
+      },
+      "successMessage": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Consectetur irure esse veniam mollit magna. Id ullamco ex nulla anim ut aliqua ex tempor reprehenderit incididunt proident exercitation adipisicing dolore est. Nisi duis est voluptate sit deserunt anim."
+            }
+          }
+        ]
+      },
+      "closeFormButtonText": {
+        "__TYPE__": "FieldContent",
+        "value": "speak",
+        "type": "Text"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

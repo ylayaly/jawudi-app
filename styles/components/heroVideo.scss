@@ -1,52 +1,67 @@
 .hero-video
 {
     &__background{
-        background-image: url(../../assets/background/hero-mobile.png);
+        background-image: url(../../assets/background/HomepageMobile.png);
         background-position: 40% 0rem;
         background-repeat: no-repeat;
-        background-size: 170%;
+        background-size: 100%;
         
-        @media (max-width: 359px) {
-            background-size: 100%;
-        }
 
-        @media (min-width: 360px) {
-            background-position: 50% 0rem;
-            background-size: 115%;
-        }
+        // @media (min-width: 360px) {
+        //     background-position: 50% 0rem;
+        //     background-size: 115%;
+        // }
 
-        @screen xs {
-            background-position: top;
-            background-size: 100%;
-        }
+        // @screen xs {
+        //     background-position: top;
+        //     background-size: 100%;
+        // }
 
-        @screen sm {
-            background-position: 50% 0%;
-            background-size: 100% 80%;
-        }
+        // @screen sm {
+        //     background-position: 50% 0%;
+        //     background-size: 100% 80%;
+        // }
 
         @screen md {
-            background-position: 50% 10%;
+            background-image: url(../../assets/background/Homepage.png);
+            background-position: top center; //100% 15%;
             background-size: cover;
         }
 
-        @screen lg {
-            background-image: url(../../assets/background/hero.svg);
-            background-position: 100% 15%;
-            background-size: cover;
-        }
+    }
 
-        @screen xl {
-            background-position: 95% 10%;
-            background-size: 105%;
-        }
+    &__image{
+        .img {
+            // max-width: 100%;
+            // margin-top: 5rem;
 
-        @screen 3xl {
-            background-position: 75% 30%;
+            // @screen lg{
+            //     max-width: 90%;
+            //     margin-top: 4rem;
+            // }
+            // @screen xl {    
+            //     max-width: 100%;
+            // }
+            // @screen 2xl {    
+            //     margin-top: 8rem;
+            // }
         }
     }
+
+    &__vision{
+        background-image: url(../../assets/background/hero-mobile-bottom.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 110%;
+
+        @media (max-width: 359px) {
+            background-size: cover;
+        }
+    }
+
     &__richtext{
         h1 {
+            @apply relative;
             @apply text-2xl;
 
             strong {
@@ -61,85 +76,134 @@
                 line-height: 2.5rem;
             }
 
-            @screen xl{
+            @screen lg{
                 @apply text-4xl;
-                width: 80%;
+                line-height: 3.5rem;
+            }
+
+            @screen xl{
+                @apply text-5xl;
+                line-height: 3.5rem;
+                width: 90%;
+            }
+
+            @screen xxl{
+                @apply text-6xl;
             }
 
             @screen 2xl{
-                @apply text-5xl;
-                line-height: 3.5rem;
                 width: 100%;
             }
 
+        }
+
+        h2 {
+            @apply relative;
+            @apply text-xl font-medium;
+
+            @screen lg{
+                @apply text-3xl;
+                line-height: 3.5rem;
+            }
+
             @screen 3xl{
-                @apply text-7xl;
+                @apply text-6xl;
                 line-height: 4.5rem;
-                
             }
         }
 
         h3 {
-            @apply text-xs;
+            @apply text-xs relative;
 
             @screen sm{
                 @apply text-base;
             }
 
             @screen xl{
-                @apply text-h1;
+                @apply text-xl;
             }
 
             @screen 3xl{
-                @apply text-13 ;
+                @apply text-3xl;
+                line-height: 2.5rem;
+            }
+        }
+
+        h4 {
+            @apply font-medium text-xs relative;
+
+            @screen sm{
+                @apply text-sm;
+            }
+
+            @screen lg{
+                @apply text-lg;
+            }
+
+            @screen xl{
+                @apply text-2xl;
+            }
+
+            @screen 3xl{
+                @apply text-4xl ;
                 line-height: 3.5rem;
             }
         }
-    }
 
-    &__image{
-        img {
-            min-height: 40rem;
-            max-height: 40rem;
-            width: auto !important;
-            height: auto !important;
-            min-width: auto !important;
+        h5 {
+            @apply text-lg relative;
+        }
+
+        h6 {
+            @apply text-2 relative;
 
             @screen md {
-                min-height: 32rem;
-                max-height: 32rem;
+                @apply text-base
             }
 
-            @screen xl {
-                min-height: 40rem;
-                max-height: 40rem;
+            @screen lg {
+                @apply text-xl
             }
+        }
+
+        p {
+            @apply mb-2 text-base relative;
+            min-height: 1rem;
 
             @screen 2xl {
-                min-height: 42rem;
-                max-height: 42rem;
+                @apply text-22;
             }
-            
-            @screen 3xl {
-                min-height: 62rem;
-                max-height: 62rem;
-            }
+        }
 
-            @media (min-width: 2500px) {
-                min-height: 60rem;
-                max-height: 60rem;
-            }
+        .green{
+            @apply text-jw-green-1 relative;
+        }
+    
+        .turquoise{
+            @apply text-jw-turquoise-3 relative;
         }
     }
 
-    &__vision{
-        background-image: url(../../assets/background/hero-mobile-bottom.png);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: 100%;
+    .youtube-video {
+        padding-top: 56.25%;
+    }
+    .youtube-video iframe{
+        @apply w-full aspect-video h-full absolute inset-0;
+    }
+    p.block-img{
+        margin-bottom: 0px;
 
-        @media (max-width: 359px) {
-            background-size: cover;
+        img{
+            height: 1.1em;
         }
     }
+
+    &.h-screen{
+        max-height: 1080px;
+    }
+
+}
+
+#prismic-toolbar-v2 {
+    display: none !important;
 }

@@ -1,0 +1,76 @@
+{
+  "id": "people_slider",
+  "type": "SharedSlice",
+  "name": "PeopleSlider",
+  "description": "PeopleSlider",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "PeopleSlider",
+      "primary": {},
+      "items": {
+        "name": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading4"
+          }
+        },
+        "position": {
+          "type": "Text",
+          "config": {
+            "label": "Position in the organization",
+            "placeholder": ""
+          }
+        },
+        "shortDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Short Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,rtl"
+          }
+        },
+        "linkedin": {
+          "type": "Link",
+          "config": {
+            "label": "Linkedin",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "email": {
+          "type": "Text",
+          "config": {
+            "label": "Email",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

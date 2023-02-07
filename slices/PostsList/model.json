@@ -1,0 +1,49 @@
+{
+  "id": "posts_list",
+  "type": "SharedSlice",
+  "name": "PostsList",
+  "description": "PostsList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "PostsList",
+      "primary": {
+        "sectionID": {
+          "type": "Text",
+          "config": {
+            "label": "Anchor Link ID",
+            "placeholder": "Anchor Link ID"
+          }
+        },
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "Theme I",
+              "Theme II"
+            ],
+            "default_value": "Theme I"
+          }
+        }
+      },
+      "items": {
+        "post": {
+          "type": "Link",
+          "config": {
+            "label": "Post",
+            "select": "document",
+            "customtypes": [
+              "post"
+            ]
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

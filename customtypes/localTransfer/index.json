@@ -1,0 +1,67 @@
+{
+  "id": "localTransfer",
+  "label": "Local Transfer Fee",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "tabTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Tab Title",
+          "placeholder": ""
+        }
+      },
+      "text": {
+        "type": "Text",
+        "config": {
+          "label": "Amount Label",
+          "placeholder": "I want to transfer"
+        }
+      },
+      "placeholderInput": {
+        "type": "Text",
+        "config": {
+          "label": "Placeholder Amount Input",
+          "placeholder": ""
+        }
+      },
+      "countryLabel": {
+        "type": "Text",
+        "config": {
+          "label": "Country Label",
+          "placeholder": ""
+        }
+      },
+      "placeholderCountryInput": {
+        "type": "Text",
+        "config": {
+          "label": "Placeholder Country Input",
+          "placeholder": ""
+        }
+      },
+      "result": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Result Text",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink",
+          "labels": [
+            "Pay amount",
+            "Service"
+          ]
+        }
+      },
+      "serviceInfo": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Service Information",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink"
+        }
+      }
+    }
+  }
+}

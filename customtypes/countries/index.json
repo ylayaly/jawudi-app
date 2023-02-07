@@ -1,0 +1,52 @@
+{
+  "id": "Countries",
+  "label": "Countries",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "country": {
+        "type": "Group",
+        "config": {
+          "label": "Country",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": ""
+              }
+            },
+            "currencyCode": {
+              "type": "Text",
+              "config": {
+                "label": "Currency Code",
+                "placeholder": ""
+              }
+            },
+            "currencySymbol": {
+              "type": "Text",
+              "config": {
+                "label": "Currency Symbol",
+                "placeholder": ""
+              }
+            },
+            "availableOn": {
+              "type": "Select",
+              "config": {
+                "label": "Available On",
+                "placeholder": "",
+                "options": [
+                  "International & Local",
+                  "International",
+                  "Local"
+                ],
+                "default_value": "International & Local"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,40 +1,294 @@
 .richtext{
     h1 {
-        @apply text-2xl;
+        @apply text-2xl mb-4;
 
         @screen 2xl{
             @apply text-h1;
         }
     }
     h2 {
-        @apply text-h3;
-
-        @screen 2xl{
-            @apply text-2xl;
-        }
-    }
-    h3 {
-        @apply text-base;
+        @apply text-h3  mb-4;
 
         @screen 2xl{
             @apply text-h3;
         }
     }
+    h3 {
+        @apply text-base  mb-4;
+
+        @screen 2xl{
+            @apply text-2xl;
+        }
+    }
     h4 {
-        @apply text-sm;
+        @apply text-sm  mb-4;
+
+        @screen 2xl{
+            @apply text-xl;
+        }
+    }
+    h5 {
+        @apply text-xs  mb-4;
 
         @screen 2xl{
             @apply text-base;
         }
     }
-    h5 {
-        @apply text-xs;
+    h6 {
+        @apply text-sm  mb-4;
+    }
+    p {
+        @apply mb-2 text-sm;
+        min-height: 1rem;
+        
+        @screen 2xl{
+            @apply text-base;
+        }
+    }
+
+    p:last-child{
+        margin-bottom: 0px;
+    }
+
+    ol {
+        @apply list-decimal list-inside;
+    }
+
+    ul {
+        @apply list-none list-inside;
+        
+        li::before {
+            @apply text-jw-turquoise-1;
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            font-size: 1.4em;
+            width: 0.8em;
+            position: relative;
+            top: 2px;
+
+        }
+    }
+
+    &.p-richtext a {
+        @apply text-jw-turquoise-1 underline font-semibold;
+    }
+    
+
+}
+
+.hero {
+    &__richtext{
+        h1 {
+            @apply text-2xl;
+
+            strong {
+                @apply text-jw-green-1;
+            }
+
+            @screen sm{
+                @apply text-h1;
+            }
+
+            @screen md{
+                line-height: 2.5rem;
+            }
+
+            @screen xl{
+                @apply text-4xl;
+            }
+
+            @screen xl{
+                @apply text-5xl;
+                width: 80%;
+            }
+
+            @screen 2xl{
+                @apply text-6xl;
+                line-height: 3.5rem;
+                width: 100%;
+            }
+
+            @screen 3xl{
+                @apply text-7xl;
+                line-height: 4.5rem;
+                
+            }
+        }
+
+        h2 {
+            @apply text-xl leading-5 font-medium;
+
+            @screen sm {
+                @apply leading-7;
+            }
+
+            @screen lg{
+                @apply text-3xl;
+                line-height: 3.5rem;
+            }
+
+            @screen 3xl{
+                @apply text-6xl;
+                line-height: 4.5rem;
+            }
+        }
+
+        h3 {
+            @apply text-xs;
+
+            @screen sm{
+                @apply text-base;
+            }
+
+            @screen xl{
+                @apply text-h1;
+            }
+
+            @screen 3xl{
+                @apply text-13 ;
+                line-height: 3.5rem;
+            }
+        }
+
+        h4 {
+            @apply font-medium text-xs;
+
+            @screen sm{
+                @apply text-sm;
+            }
+
+            @screen lg{
+                @apply text-lg;
+            }
+
+            @screen xl{
+                @apply text-2xl;
+            }
+
+            @screen 3xl{
+                @apply text-4xl ;
+                line-height: 3.5rem;
+            }
+        }
+
+        h5 {
+            @apply text-lg;
+        }
+
+        h6 {
+            @apply text-2;
+
+            @screen md {
+                @apply text-base
+            }
+
+            @screen lg {
+                @apply text-xl
+            }
+        }
+
+        p {
+            @apply mb-2 text-base leading-7;
+            min-height: 1rem;
+
+            @screen 2xl {
+                @apply text-22;
+            }
+        }
+
+        .green{
+            @apply text-jw-green-1;
+        }
+
+        .blue{
+            @apply text-jw-blue-3;
+        }
+    
+        .turquoise{
+            @apply text-jw-turquoise-3;
+        }
+    }
+}
+
+.richtext__jw{
+    h1 {
+        @apply mb-4 text-2xl;
+
+        @screen lg {
+            @apply text-3xl;
+        }
 
         @screen 2xl{
-            @apply text-sm;
+            font-size: 2.68rem;
+            line-height: 2.75rem;
+        }
+
+        strong{
+            @apply text-jw-green-1;
+        }
+    }
+    h2 {
+        @apply text-2xl  mb-4;
+
+        @screen 2xl{
+            @apply text-4xl;
+        }
+        strong{
+            @apply text-jw-green-1;
+        }
+    }
+    h3 {
+        @apply text-xl  mb-4;
+
+        @screen 2xl{
+            @apply text-3xl;
+        }
+        strong{
+            @apply text-jw-green-1;
+        }
+    }
+    h4 {
+        @apply text-lg  mb-4;
+
+        @screen 2xl{
+            @apply text-22;
+        }
+        strong{
+            @apply text-jw-green-1;
+        }
+    }
+    h5 {
+        @apply text-base  mb-4;
+
+        @screen 2xl{
+            @apply text-lg;
+        }
+        strong{
+            @apply text-jw-green-1;
         }
     }
     h6 {
-        @apply text-h6;
+        @apply text-sm  mb-4;
+        
+        @screen 2xl{
+            @apply text-base;
+        }
+        strong{
+            @apply text-jw-green-1;
+        }
     }
+    p {
+        min-height: 1rem;
+        @apply text-lg  mb-2;
+
+        @screen 2xl{
+            @apply text-22;
+        }
+    }
+
+    h1:last-child{
+        margin-bottom: 0px;
+    }
+
 }

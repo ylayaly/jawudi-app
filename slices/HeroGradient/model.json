@@ -1,0 +1,43 @@
+{
+  "id": "hero_gradient",
+  "type": "SharedSlice",
+  "name": "HeroGradient",
+  "description": "HeroGradient",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroGradient",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2,heading3"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "Link",
+            "select": null
+          }
+        },
+        "textLink": {
+          "type": "Text",
+          "config": {
+            "label": "Text Link",
+            "placeholder": "Text Link"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

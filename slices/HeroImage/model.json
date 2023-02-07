@@ -1,0 +1,134 @@
+{
+  "id": "hero_image",
+  "type": "SharedSlice",
+  "name": "HeroImage",
+  "description": "HeroImage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroImage",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em",
+            "labels": [
+              "Text green",
+              "Text turquoise",
+              "Text blue animate"
+            ]
+          }
+        },
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Content",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,paragraph,em,hyperlink",
+            "labels": [
+              "Text green",
+              "Text turquoise"
+            ]
+          }
+        },
+        "heroImage": {
+          "type": "Image",
+          "config": {
+            "label": "Right Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "backgroundImage": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "background_image_mobile": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image Mobile",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "showForm": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Form Button",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "formID": {
+          "type": "Text",
+          "config": {
+            "label": "Form ID",
+            "placeholder": "Formspree Form ID"
+          }
+        },
+        "formText": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Button Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "textBtn": {
+          "type": "Text",
+          "config": {
+            "label": "Button Text",
+            "placeholder": ""
+          }
+        },
+        "descriptionForm": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description Form",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,rtl"
+          }
+        },
+        "submitButtomText": {
+          "type": "Text",
+          "config": {
+            "label": "Submit Button Text",
+            "placeholder": ""
+          }
+        },
+        "successMessage": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Success Message",
+            "placeholder": "Thank you!",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,rtl,list-item,o-list-item"
+          }
+        },
+        "closeFormButtonText": {
+          "type": "Text",
+          "config": {
+            "label": "Close Form Button Text",
+            "placeholder": "Close PopUp"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "fees",
+  "type": "SharedSlice",
+  "name": "Fees",
+  "description": "Fees",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Fees",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1,strong"
+          }
+        },
+        "buttonText": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Button Text",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "strong,em,heading4"
+          }
+        },
+        "disclaimer": {
+          "type": "Text",
+          "config": {
+            "label": "Disclaimer",
+            "placeholder": ""
+          }
+        },
+        "detailImage": {
+          "type": "Image",
+          "config": {
+            "label": "Detail Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "detailPercent": {
+          "type": "Text",
+          "config": {
+            "label": "Detail Percent",
+            "placeholder": ""
+          }
+        },
+        "detailInfo": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Detail Information",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph",
+            "labels": [
+              "Text green",
+              "Text blue"
+            ]
+          }
+        },
+        "detailLink": {
+          "type": "Link",
+          "config": {
+            "label": "Detail Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "detailLinkText": {
+          "type": "Text",
+          "config": {
+            "label": "Detail Link Text",
+            "placeholder": ""
+          }
+        },
+        "fairBackground": {
+          "type": "Image",
+          "config": {
+            "label": "Background",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "transfer_step_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Transfer Step Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1,strong",
+            "labels": ["Text green"]
+          }
+        },
+        "transferStepBackground": {
+          "type": "Image",
+          "config": {
+            "label": "Transfer Step Background",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "mobileBackground": {
+          "type": "Image",
+          "config": {
+            "label": "Mobile Background",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "align": {
+          "type": "Select",
+          "config": {
+            "label": "Align",
+            "placeholder": "",
+            "options": [
+              "Center",
+              "Right",
+              "Left"
+            ],
+            "default_value": "Center"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

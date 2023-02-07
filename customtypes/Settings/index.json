@@ -20,6 +20,36 @@
           "label": "NMLS",
           "placeholder": "NMLS #"
         }
+      },
+      "contact_link": {
+        "type": "Link",
+        "config": {
+          "label": "Contact Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "QRcode": {
+        "type": "Image",
+        "config": {
+          "label": "QR Code",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "textQRCode": {
+        "type": "Text",
+        "config": {
+          "label": "Text QRCode",
+          "placeholder": ""
+        }
+      },
+      "text_call_to_action_qr": {
+        "type": "Text",
+        "config": {
+          "label": "Text Call to Action QR",
+          "placeholder": ""
+        }
       }
     },
     "Social Media": {

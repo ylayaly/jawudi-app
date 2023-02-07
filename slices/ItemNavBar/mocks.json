@@ -1,0 +1,55 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://google.com"
+        }
+      },
+      "link_text": {
+        "__TYPE__": "FieldContent",
+        "value": "been",
+        "type": "Text"
+      },
+      "type": {
+        "__TYPE__": "FieldContent",
+        "value": "Desktop & Mobile",
+        "type": "Select"
+      },
+      "order": {
+        "__TYPE__": "FieldContent",
+        "value": "18",
+        "type": "Number"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://prismic.io"
+              }
+            }
+          ],
+          [
+            "link_text",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "frequently",
+              "type": "Text"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

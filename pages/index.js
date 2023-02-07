@@ -1,39 +1,19 @@
+import React, { useEffect } from 'react'
 import { createClient } from '../prismicio'
-import { SliceZone } from '@prismicio/react'
-import * as prismicH from '@prismicio/helpers';
-import { components } from '../slices'
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Seo from '../components/seo';
+import PageComponent from '../components/page';
+import { useAppContext } from '../context/appContext';
 
+export default function Homepage({ page, navigationHeader, navigationFooter, settings, legalPages }) {
+  const { addLegalPages } = useAppContext();
+  useEffect(() => {
+      addLegalPages(legalPages);
+  }, [legalPages, addLegalPages])
 
-export default function Homepage({ page, navigationHeader, navigationFooter, settings }) {
   if(!page || (page && !page.data) ){
     return <></>
   }
-  page.data.slices.map(slice => {
-    if(slice.slice_type === "navigation_bar"){
-      slice.items = navigationHeader.data.Links
-    }
-    return slice
-  })
-
-  const seoData = {
-    title : prismicH.asText(page.data.title),
-    description : page.data.description,
-    image : page.data.image.url
-  }
-
-  return ( 
-  <>
-    <Seo data={seoData} />
-    <Header navigation={navigationHeader} settings={settings} />
-    <div>
-      <SliceZone slices={page.data.slices} components={components} navHeader={navigationHeader} />
-    </div>
-    <Footer navigation={navigationFooter} settings={settings} />
-  </>
-  )
+  
+  return <PageComponent page={page} navigationHeader={navigationHeader} navigationFooter={navigationFooter} settings={settings} />
 }
 
 export async function getStaticProps({ params, previewData }) {
@@ -43,8 +23,9 @@ export async function getStaticProps({ params, previewData }) {
   const navigationHeader = await client.getSingle('HeaderNavigation')
   const navigationFooter = await client.getAllByType('FooterNavigation')
   const settings = await client.getSingle('Settings')
+  const legalPages = await client.getAllByType('legalPage')
 
   return {
-    props: { page, navigationHeader, navigationFooter, settings },
+    props: { page, navigationHeader, navigationFooter, settings, legalPages },
   }
 }

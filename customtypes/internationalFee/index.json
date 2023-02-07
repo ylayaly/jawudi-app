@@ -1,0 +1,61 @@
+{
+  "id": "internationalFee",
+  "label": "International Fee",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "tabTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Tab Title",
+          "placeholder": ""
+        }
+      },
+      "text": {
+        "type": "Text",
+        "config": {
+          "label": "Text",
+          "placeholder": "I want to transfer"
+        }
+      },
+      "result": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Effective rate",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink",
+          "labels": [
+            "Rate"
+          ]
+        }
+      },
+      "totalPay": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Total you will pay",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink",
+          "labels": [
+            "Pay amount",
+            "Fee"
+          ]
+        }
+      },
+      "recipientWill": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Recipient will get",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink",
+          "labels": [
+            "Get amount"
+          ]
+        }
+      }
+    }
+  }
+}

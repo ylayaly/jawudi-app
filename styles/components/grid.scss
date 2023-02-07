@@ -1,0 +1,36 @@
+.grid-section{
+    .richtext {
+        p {
+            @apply text-xs;
+
+            @screen sm {
+                @apply text-sm;
+            }
+
+            @screen xl {
+                @apply text-base;
+            }
+        }
+        h3 {
+            @apply text-4xl;
+
+            @screen 2xl {
+                @apply text-6xl;
+            }
+        }
+        .description {
+            p {
+                @apply mb-2 text-xs;
+                min-height: 1rem;
+
+                @screen md {
+                    @apply text-lg;
+                }
+        
+                @screen xl {
+                    @apply text-22 leading-10;
+                }
+            }
+        }
+    }
+}

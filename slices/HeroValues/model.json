@@ -1,0 +1,39 @@
+{
+  "id": "hero_values",
+  "type": "SharedSlice",
+  "name": "HeroValues",
+  "description": "HeroValues",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroValues",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Hero Text",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": false,
+            "multi": "heading1,heading2,paragraph,heading3,heading4,heading5,heading6,strong,em",
+            "labels": [
+              "Highlight"
+            ]
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

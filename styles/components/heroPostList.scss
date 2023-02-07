@@ -1,0 +1,157 @@
+.hero-post-list{
+    &__bg{
+        background-image: url(../../assets/background/bg-hero-ideas.svg);
+        background-repeat: no-repeat;
+    }
+
+    .Turquoise {
+        @apply text-jw-turquoise-4;
+    }
+
+    .hero__richtext{
+        h1 {
+            @apply text-2xl;
+
+            @screen sm{
+                @apply text-3xl;
+                line-height: 2rem;
+            }
+
+            @screen md{
+                @apply text-4xl;
+                line-height: 2.5rem;
+            }
+
+            @screen lg{
+                @apply text-5xl;
+                line-height: 3rem;
+                width: 100%;
+            }
+
+            @screen xl{
+                @apply text-6xl;
+                line-height: 3.5rem;
+                width: 100%;
+            }
+
+            @screen 3xl{
+                @apply text-7xl;
+                line-height: 4.5rem;
+            }
+
+        }
+        .hero-post-list__subtitle {
+            h1{
+                @apply text-lg;
+                line-height: 1.5rem;
+
+                @screen sm{
+                    @apply text-2xl;
+                    line-height: 2rem;
+                }
+
+                @screen md{
+                    @apply text-4xl;
+                    line-height: 2.5rem;
+                }
+
+                @screen lg{
+                    @apply text-5xl;
+                    line-height: 3rem;
+                    width: 100%;
+                }
+
+                @screen xl{
+                    @apply text-6xl;
+                    line-height: 3.5rem;
+                    width: 100%;
+                }
+    
+                @screen 3xl{
+                    @apply text-7xl;
+                    line-height: 4.5rem;
+                }
+            }
+        }
+        
+    }
+}
+
+.posts-list {
+    .hero__richtext{
+        h1 {
+            @apply text-lg;
+
+            @screen sm{
+                @apply text-xl;
+                line-height: 2rem;
+            }
+
+            @screen md{
+                @apply text-2xl;
+                line-height: 2.5rem;
+            }
+
+            @screen lg{
+                @apply text-4xl;
+                line-height: 3rem;
+                width: 100%;
+            }
+
+            @screen xl{
+                @apply text-5xl;
+                line-height: 3.5rem;
+                width: 100%;
+            }
+
+            @screen 3xl{
+                @apply text-7xl;
+                line-height: 4.5rem;
+            }
+
+        }
+    }
+
+    .block span{
+        display: block !important;
+    }
+}
+
+.posts-suggestion > a:last-child{
+    display: none;
+
+    @screen xl{
+        display: flex;
+    }
+}
+
+.post {
+    .p-post {
+        @screen md{
+            @apply pr-32;
+        }
+        @screen xl {
+            @apply pr-48;
+        }
+    }
+
+    .p-richtext {
+        @apply my-4 mb-2;
+        
+        @screen xs {
+            @apply my-6 mb-4;
+        }
+    
+        @screen sm {
+            @apply my-8 mb-6;
+        }
+         
+        @screen md {
+            @apply my-14 mb-8;
+        }
+        
+        @screen xl {
+            @apply mt-20 mb-10;
+        }
+    }
+}

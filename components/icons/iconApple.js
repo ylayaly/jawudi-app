@@ -4,6 +4,6 @@ import apple from '../../assets/img/apple-btn.png'
 
 export default function IconApple() {
   return (
-    <Image width={130} height={43} src={apple} alt="Apple Store" />
+    <Image src={apple} alt="Apple Store" />
   )
 }

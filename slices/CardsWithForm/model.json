@@ -1,0 +1,89 @@
+{
+  "id": "cards_with_form",
+  "type": "SharedSlice",
+  "name": "CardsWithForm",
+  "description": "CardsWithForm",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CardsWithForm",
+      "primary": {
+        "info": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Information",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink"
+          }
+        }
+      },
+      "items": {
+        "cardIcon": {
+          "type": "Select",
+          "config": {
+            "label": "Icon",
+            "placeholder": "",
+            "options": [
+              "Chat",
+              "Email",
+              "Help Center"
+            ],
+            "default_value": "Chat"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink"
+          }
+        },
+        "cardLink": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "formID": {
+          "type": "Text",
+          "config": {
+            "label": "Form ID",
+            "placeholder": ""
+          }
+        },
+        "submitButtonText": {
+          "type": "Text",
+          "config": {
+            "label": "Submit Button Text",
+            "placeholder": ""
+          }
+        },
+        "successMessage": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Success Message",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

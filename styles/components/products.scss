@@ -1,0 +1,166 @@
+.hero {
+    &__richtext{
+        h1 {
+            @apply text-22;
+
+            strong {
+                @apply text-jw-green-1;
+            }
+
+            @screen sm{
+                @apply text-4xl;
+                line-height: 2.5rem;
+            }
+
+            @screen xl{
+                width: 80%;
+            }
+
+            @screen xxl{
+                @apply text-5xl;
+                line-height: 3.5rem;
+                width: 100%;
+            }
+
+            @screen 3xl{
+                @apply text-6xl;
+                line-height: 4.5rem;
+                
+            }
+        }
+        h3 {
+            @screen sm{
+                @apply text-xl;
+            }
+
+            @screen xl{
+                font-size: 24px;
+                line-height: 2.5rem;
+            }
+            @screen xxl{
+                font-size: 32px;
+            }
+            @screen 2xl{
+                font-size: 43px;
+                line-height: 3.5rem;
+            }
+        }
+
+        h4 {
+            @apply relative;
+
+            @screen sm{
+                @apply text-xl;
+            }
+
+            @screen xl{
+                font-size: 22px;
+                line-height: 2.5rem;
+            }
+            @screen xxl{
+                font-size: 28px;
+            }
+            @screen 2xl{
+                font-size: 31px;
+                line-height: 3.5rem;
+            }
+        }
+    }
+}
+
+.tabs-products {
+    &__slide {
+        background-image: url(../../assets/background/global.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150%;
+
+        @screen md {
+            background-size: contain;
+        }
+
+        @screen 3xl {
+            background-size: 100%;
+        }
+    }
+
+    .richtext__jw{
+        p {
+            @apply text-sm;
+        }
+    }
+}
+
+.store-products{
+    &__bg{
+        background-image: url(../../assets/background/stores-mobile__bg.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: auto;
+
+        @screen md{
+            background-size: cover;
+            background-image: url(../../assets/background/stores__bg.png);    
+        }
+
+        @screen lg{
+            background-size: 120% 100%;
+        }
+
+        @screen 3xl{
+            background-size: cover;
+        }
+    }
+
+    &__container {
+        @media (min-width: 2400px) {
+            min-height: 60rem;
+        }
+    }
+}
+
+.circle-progress {
+    border: #041934 solid 1px;
+    background: conic-gradient(#83FCBA var(--progress), #041934 0deg);
+    font-size: 0;
+    transition: background 2s ease-in;
+  }
+  
+  .circle-progress::after {
+    content: '';
+    width: 100%;
+    margin: 5px;
+    border-radius: 50%;
+    background: #041934;
+    text-align: center;
+
+    @screen sm{
+        margin: 2px;
+    }
+
+    @screen md{
+        margin: 4px;
+    }
+  }
+
+.bg-bottom-product-tabs{
+    background-image: url(../../assets/background/global-waves-mobile.png);
+    background-size: 180%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #041934;
+    
+    @screen md{
+        background-image: url(../../assets/background/global-waves.png);
+        background-size: 100%;
+    }
+}
+
+.bg-video-mask{
+    background-image: url(../../assets/background/mask-video.png);
+}
+
+.video svg{
+    width: 100%;
+    height: 100%;
+}

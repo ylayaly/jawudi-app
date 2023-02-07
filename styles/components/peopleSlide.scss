@@ -1,0 +1,28 @@
+.people-section{
+    &__item:hover{
+        .people-section__bg{
+            @apply bg-jw-dark-blue;
+        }
+        .people-section__info{
+            display: flex;
+        }
+    }
+
+    &__long-detail{
+        .richtext{
+            p{
+                @apply text-xs;
+
+                @screen lg {
+                    @apply text-lg;
+                }
+                
+            }
+        }
+    }
+
+    &__image{
+        clip-path: url(#people__mobile_top);
+    }
+    
+}

@@ -1,0 +1,29 @@
+.contactForm {
+    input:not(.searchInput):focus, textarea:focus{
+        border: solid #247F8C 1px;
+    }
+    ::placeholder { 
+        color: #247F8C;
+        letter-spacing: normal;
+        font-size: initial;
+    }
+    .jw-select{
+        position: relative;
+    }
+    .jw-select::before{
+        @apply top-0 right-4 left-auto bottom-0 absolute block h-full;
+        content: '';
+        width: 8%;
+        background-image: url(../../assets/img/arrow-turquoise.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition-duration: 0.5s;
+        transition-property: transform;
+    }
+    .jw-select.open::before{
+        transform: rotate(180deg);
+    }
+    #searchInput::placeholder{
+        color: white;
+    }
+}

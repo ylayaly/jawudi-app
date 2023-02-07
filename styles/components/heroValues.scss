@@ -1,0 +1,36 @@
+.hero-values {
+    .hero__richtext {
+        h2 {
+            line-height: 2rem;
+
+            @screen xs {
+                font-size: 1.75rem;
+            }
+
+            @screen lg{
+                @apply text-5xl;
+            }
+
+            @screen 3xl{
+                @apply text-6xl;
+            }
+        }
+        h4 {
+            @apply leading-6;
+            font-size: 1.187rem;
+
+            @screen md {
+                @apply leading-6;
+            }
+
+            @screen xl{
+                @apply text-2xl;
+            }
+
+            @screen 3xl{
+                @apply text-4xl ;
+                line-height: 3.5rem;
+            }
+        }
+    }
+}

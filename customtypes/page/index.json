@@ -15,12 +15,25 @@
       "logoColor": {
         "type": "Select",
         "config": {
-          "label": "Logo Color",
+          "label": "Logo Desktop Color",
           "placeholder": "Logo Color",
           "options": [
             "Dark",
             "Light",
-            "Blue Light"
+            "Green"
+          ],
+          "default_value": "Dark"
+        }
+      },
+      "logoMobileColor": {
+        "type": "Select",
+        "config": {
+          "label": "Logo Mobile Color",
+          "placeholder": "Logo Color",
+          "options": [
+            "Dark",
+            "Light",
+            "Green"
           ],
           "default_value": "Dark"
         }
@@ -34,6 +47,60 @@
               "type": "SharedSlice"
             },
             "navigation_bar": {
+              "type": "SharedSlice"
+            },
+            "hero_gradient": {
+              "type": "SharedSlice"
+            },
+            "rich_text": {
+              "type": "SharedSlice"
+            },
+            "hero_image": {
+              "type": "SharedSlice"
+            },
+            "posts_list": {
+              "type": "SharedSlice"
+            },
+            "post_cta": {
+              "type": "SharedSlice"
+            },
+            "tabs": {
+              "type": "SharedSlice"
+            },
+            "hero_products": {
+              "type": "SharedSlice"
+            },
+            "full_image": {
+              "type": "SharedSlice"
+            },
+            "hero_simple": {
+              "type": "SharedSlice"
+            },
+            "cards_with_form": {
+              "type": "SharedSlice"
+            },
+            "fees": {
+              "type": "SharedSlice"
+            },
+            "people_slider": {
+              "type": "SharedSlice"
+            },
+            "hero_ideas": {
+              "type": "SharedSlice"
+            },
+            "fund_grid": {
+              "type": "SharedSlice"
+            },
+            "store_buttons_cta": {
+              "type": "SharedSlice"
+            },
+            "hero_values": {
+              "type": "SharedSlice"
+            },
+            "cards": {
+              "type": "SharedSlice"
+            },
+            "cta": {
               "type": "SharedSlice"
             }
           }
@@ -63,6 +130,53 @@
         "config": {
           "label": "Description",
           "placeholder": ""
+        }
+      }
+    },
+    "Settings": {
+      "minimalHeader": {
+        "type": "Boolean",
+        "config": {
+          "label": "Minimal Header",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      },
+      "headerMobileWhite": {
+        "type": "Boolean",
+        "config": {
+          "label": "Header Mobile White",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      },
+      "footerMobileLight": {
+        "type": "Boolean",
+        "config": {
+          "label": "Footer Mobile Light",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      },
+      "showTopFooter": {
+        "type": "Boolean",
+        "config": {
+          "label": "Show top border footer",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": true
+        }
+      },
+      "showStoreBtn": {
+        "type": "Boolean",
+        "config": {
+          "label": "Show QR Scan Header",
+          "placeholder_false": "Hide",
+          "placeholder_true": "Show",
+          "default_value": false
         }
       }
     }

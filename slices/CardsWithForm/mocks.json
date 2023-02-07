@@ -1,0 +1,96 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "info": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Ex proident ad duis cillum ex. Et mollit excepteur officia ipsum eu irure. Enim et est ut qui cupidatat veniam sit est pariatur aliquip cupidatat enim."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "cardIcon",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "Chat",
+              "type": "Select"
+            }
+          ],
+          [
+            "title",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "interest",
+              "type": "Text"
+            }
+          ],
+          [
+            "description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Eu consequat quis reprehenderit nisi fugiat sit irure quis Lorem ea reprehenderit ad. Officia non labore velit consectetur consequat laborum et tempor."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "cardLink",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
+              }
+            }
+          ],
+          [
+            "formID",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "eye",
+              "type": "Text"
+            }
+          ],
+          [
+            "submitButtonText",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "current",
+              "type": "Text"
+            }
+          ],
+          [
+            "successMessage",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Velit adipisicing labore duis fugiat Lorem nisi. Exercitation ullamco ut et enim ipsum irure dolor pariatur laborum nisi occaecat minim."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]
