@@ -1,1 +1,1 @@
-{"apis":{"dynamic":[],"nonDynamic":{"/api/hello":"pages/api/hello.js"}},"domainRedirects":{},"enableHTTPCompression":false}
+{"apis":{"dynamic":[{"file":"pages/api/get-prismic/[data].js","regex":"^\\/api\\/get-prismic(?:\\/([^\\/#\\?]+?))[\\/#\\?]?$"}],"nonDynamic":{"/api/deploy":"pages/api/deploy.js","/api/exit-preview":"pages/api/exit-preview.js","/api/preview":"pages/api/preview.js","/api/transfer":"pages/api/transfer.js"}},"domainRedirects":{},"enableHTTPCompression":false}

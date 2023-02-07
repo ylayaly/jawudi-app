@@ -22,6 +22,8 @@ import RichText from './RichText';
 import StoreButtonsCta from './StoreButtonsCta';
 import Tabs from './Tabs';
 
+const c = "C";
+
 export {
 	Cards,
 	CardsWithForm,

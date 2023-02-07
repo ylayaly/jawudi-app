@@ -1,0 +1,6 @@
+{
+  "name": "jawudi-my-test",
+  "region": "us-east-1",
+  "accelerated": true,
+  "url": "https://jawudi-my-test.s3.amazonaws.com"
+}

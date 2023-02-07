@@ -1,0 +1,17 @@
+{
+  "name": "jawudi-my-test",
+  "hash": "WGBNCkwsu/E0GFC7Tsc4nAYjzxrcbdH3fiU3igHiQds=",
+  "description": "Next.js Regeneration Lambda",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/Users/ylayaly/Desktop/Proyectos/my-local-jawudi/.serverless_nextjs/regeneration-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs14.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::398052081528:role/cwm91tf-xg6wf0a"
+  },
+  "arn": "arn:aws:lambda:us-east-1:398052081528:function:jawudi-my-test",
+  "region": "us-east-1"
+}

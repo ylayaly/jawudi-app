@@ -1,5 +1,5 @@
 {
   "components": {
-    "jawudiApp": "/Users/ylayaly/.serverless/components/registry/npm/@sls-next/serverless-component@3.7.0/node_modules/@sls-next/serverless-component"
+    "jawudiWeb": "/Users/ylayaly/.serverless/components/registry/npm/@sls-next/serverless-component@3.7.0/node_modules/@sls-next/serverless-component"
   }
 }

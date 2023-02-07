@@ -1,0 +1,6 @@
+{
+  "name": "jawudi-my-test.fifo",
+  "arn": "arn:aws:sqs:us-east-1:398052081528:jawudi-my-test.fifo",
+  "url": "https://sqs.us-east-1.amazonaws.com/398052081528/jawudi-my-test.fifo",
+  "region": "us-east-1"
+}

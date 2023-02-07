@@ -1,6 +1,8 @@
+bucket: ${env.BUCKET}
+cloudfront: ${env.CLOUDFRONT}
 jawudiWeb:
   component: "@sls-next/serverless-component"
   inputs:
-    bucketName: jawudi-my-test
+    bucketName: ${bucket}
     cloudfront:
-      distributionId: E2R3MLYHP2GZOA
+      distributionId: ${cloudfront}
