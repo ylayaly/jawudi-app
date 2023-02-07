@@ -1,2 +1,6 @@
 jawudiWeb:
   component: "@sls-next/serverless-component"
+  inputs:
+    bucketName: jawudi-my-test
+    cloudfront:
+      distributionId: E2R3MLYHP2GZOA
