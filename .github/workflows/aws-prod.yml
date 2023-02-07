@@ -42,5 +42,8 @@ jobs:
         CLOUDFRONT: E2R3MLYHP2GZOA
       run: |
           echo API_KEY=$API_KEY >> .env
+          echo API_URL=$API_URL >> .env
+          echo BUCKET=$BUCKET >> .env
+          echo CLOUDFRONT=$CLOUDFRONT >> .env
     - run: npm run deploy
     - run: components-v1
